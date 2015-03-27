@@ -1,2 +1,2 @@
 # VLSIFinalProject
-Repository for VLSI Final Project Verilog code
+Repository for Gourav Khadge and Leif Park Jordan's VLSI final project Verilog code. For this project, we designed an application-specific integrated circuit (ASIC) that drives a dual seven-segment display using time multiplexing and reads button presses from a keypad, including debouncing and ignoring held keys. This chip could, therefore, be used to fulfill the requirements of the second and third E155 (MicroPs) labs.
