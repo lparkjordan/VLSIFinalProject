@@ -58,12 +58,12 @@ always_comb
 endmodule
 
 
-module lab3 #(parameter TIMEBITS = 3) (input  logic        ph1, ph2,                  // timer 
+module lab3 #(parameter TIMEBITS = 2) (input  logic        ph1, ph2,                  // timer 
                 input  logic        reset,
                 input  logic [3:0]  rows,
                 output logic [3:0]  cols,
                 output logic [3:0]  currentDigit, lastDigit,
-                output logic slowtimer
+                output logic slowtimer // 50% duty cycle timer that changes every 2^NBITS-1 cycles
              );                  // the segments
   
 
@@ -79,7 +79,6 @@ module lab3 #(parameter TIMEBITS = 3) (input  logic        ph1, ph2,            
 
     logic [TIMEBITS-1:0] enabletimer;
     logic slowen; // enable that goes high every 2^NBITS-1 cycles
-    logic slowtimer; // 50% duty cycle timer that changes every 2^NBITS-1 cycles
 
     flopr #(TIMEBITS) enablereg(ph1,ph2,reset,'b0,enabletimer+1,enabletimer);
     assign slowen = &enabletimer;
@@ -219,4 +218,17 @@ module latch1 #(parameter WIDTH = 8)
 
   always_latch
     if (ph) q <= d;
+endmodule
+
+module mux3 #(parameter WIDTH = 8)
+             (input  logic [WIDTH-1:0] d0, d1, d2,
+              input  logic [1:0]       s, 
+              output logic [WIDTH-1:0] y);
+
+  always_comb 
+    casez (s)
+      2'b00: y = d0;
+      2'b01: y = d1;
+      2'b1?: y = d2;
+    endcase
 endmodule
