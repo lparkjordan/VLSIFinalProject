@@ -15,7 +15,7 @@ assign digit1 = (keypadInputNswitchInput)    ? digit1Keypad : switch1;
 assign digit2 = (keypadInputNswitchInput)    ? digit2Keypad : switch2;
 
 //get digits from keypad
-lab3 keypadInput(clk1, clk2, reset, keypadRows, keypadCols, digit1Keypad, digit2Keypad, slowtimer);  // output digit1 and digit2 from keypad
+keyScanner keypadInput(clk1, clk2, reset, keypadRows, keypadCols, digit1Keypad, digit2Keypad, slowtimer);  // output digit1 and digit2 from keypad
 
 //output digits to seven seg
 sevenSegOutput out(slowtimer, digit1, digit2, enable1, enable2, sevenSeg);
@@ -58,7 +58,7 @@ always_comb
 endmodule
 
 
-module lab3 #(parameter TIMEBITS = 2) (input  logic        ph1, ph2,                  // timer 
+module keyScanner #(parameter TIMEBITS = 2) (input  logic        ph1, ph2,                  // timer 
                 input  logic        reset,
                 input  logic [3:0]  rows,
                 output logic [3:0]  cols,
