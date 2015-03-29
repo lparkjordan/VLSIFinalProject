@@ -80,7 +80,7 @@ module keyScanner #(parameter TIMEBITS = 2) (input  logic        ph1, ph2,      
     logic [TIMEBITS-1:0] enabletimer;
     logic slowen; // enable that goes high every 2^NBITS-1 cycles
 
-    flopr #(TIMEBITS) enablereg(ph1,ph2,reset,'b0,enabletimer+1,enabletimer);
+    flopenr #(TIMEBITS) enablereg(ph1,ph2,reset,1'b1,enabletimer+1'b1,enabletimer);
     assign slowen = &enabletimer;
     flopenr #(1) timerreg(ph1,ph2,reset,slowen,~slowtimer, slowtimer);
     
