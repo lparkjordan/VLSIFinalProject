@@ -49,7 +49,7 @@ module testbench();
 			end
 			vectornum = vectornum + 1;
 		end
-		if(testvectors[vectornum] === 'bx) begin
+		if(testvectors[vectornum] === 27'bx) begin
 			$display("%d tests completed with %d errors", vectornum, errors);
 			$stop;
 		end
