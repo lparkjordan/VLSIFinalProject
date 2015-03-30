@@ -7,15 +7,22 @@ module e155ASIC #(parameter TIMEBITS = 3) (input  logic        clk1, clk2, reset
                     output logic        enable1, enable2  // the enables
                     );    
                     
-logic [3:0]  digit1Keypad, digit2Keypad, digit1, digit2;
+logic [3:0]  digit1Keypad, digit2Keypad, digit1, digit2, colEnables;
 logic slowtimer;
 
 //choose input of hex digits from either keypad or switches
 assign digit1 = (keypadInputNswitchInput)    ? digit1Keypad : switch1; 
 assign digit2 = (keypadInputNswitchInput)    ? digit2Keypad : switch2;
 
+//use column outputs as enables on output pads
+assign keypadCols[0] = colEnables[0] ? colEnables[0] : 1'bZ;
+assign keypadCols[1] = colEnables[1] ? colEnables[1] : 1'bZ;
+assign keypadCols[2] = colEnables[2] ? colEnables[2] : 1'bZ;
+assign keypadCols[3] = colEnables[3] ? colEnables[3] : 1'bZ;
+
+
 //get digits from keypad
-keyScanner keypadInput(clk1, clk2, reset, keypadRows, keypadCols, digit1Keypad, digit2Keypad, slowtimer);  // output digit1 and digit2 from keypad
+keyScanner keypadInput(clk1, clk2, reset, keypadRows, colEnables, digit1Keypad, digit2Keypad, slowtimer);  // output digit1 and digit2 from keypad
 
 //output digits to seven seg
 sevenSegOutput out(slowtimer, digit1, digit2, enable1, enable2, sevenSeg);
@@ -90,15 +97,14 @@ module keyScanner #(parameter TIMEBITS = 2) (input  logic        ph1, ph2,      
     flopenr #(4) currentdigitreg(ph1, ph2, reset, slowen, (updatedigit) ? nextdigit : currentDigit, currentDigit);
         
     // column scan logic 
-    // Note, columns not being scanned are left to float
-    // so that connections do not cause short circuits
+    // Column outputs will be used both as data and output enables to prevent shorts
     always_comb begin
         case (state)
-            2'd0: cols = 4'b1zzz;
-            2'd1: cols = 4'bz1zz;
-            2'd2: cols = 4'bzz1z;
-            2'd3: cols = 4'bzzz1;
-            default: cols = 4'bzzzz;
+            2'd0: cols = 4'b1000;
+            2'd1: cols = 4'b0100;
+            2'd2: cols = 4'b0010;
+            2'd3: cols = 4'b0001;
+            default: cols = 4'b0000;
         endcase
     end
     
