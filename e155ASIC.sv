@@ -194,18 +194,6 @@ module flopenr #(parameter WIDTH = 8)
   flop #(WIDTH) f(ph1, ph2, d2, q);
 endmodule
 
-module flopr #(parameter WIDTH = 8)
-                (input  logic             ph1, ph2, reset,
-         input logic [WIDTH-1:0] resetval,
-                 input  logic [WIDTH-1:0] d, 
-                 output logic [WIDTH-1:0] q);
-                      
- logic [WIDTH-1:0] d2;
- 
- assign d2 = reset ? resetval : d;
- flop #(WIDTH) f(ph1, ph2, d2, q);
-endmodule
-
 module flop #(parameter WIDTH = 8)
              (input  logic             ph1, ph2, 
               input  logic [WIDTH-1:0] d, 
