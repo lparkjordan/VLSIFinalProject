@@ -1,0 +1,10 @@
+twoDigitDisplay I0 ( enable1, enable2, seg[6:0], net18[0:3],
+     net17[0:3], net19);
+mux2_c_1x Digit1mux2[3:0] ( net18[0:3], switch1[3:0], net21[0:3],
+     keypadNswitchinput);
+mux2_c_1x Digit2mux2[3:0] ( net17[0:3], switch2[3:0], net20[0:3],
+     keypadNswitchinput);
+keyScanner I3 ( ph1, ph2, reset, keypadRows[3:0], keypadCols[3:0],
+     net21[0:3], net20[0:3], net19);
+
+endmodule

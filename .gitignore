@@ -21,3 +21,16 @@ cov*/
 transcript*
 sc_dpiheader.h
 vsim.dbg
+
+# log files
+*.log*
+
+# schematic editor lock files
+*cdslck*
+
+# synth files
+*.pow
+*.rep
+*.mr
+*.pvl
+*.syn

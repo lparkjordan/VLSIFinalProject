@@ -1,0 +1,18 @@
+// Library - muddlib11, Cell - nand4_1x, View - cmos_sch
+// LAST TIME SAVED: Mar 30 23:00:02 2015
+// NETLIST TIME: Mar 31 00:27:42 2015
+`timescale 1ns / 100ps 
+
+module nand4_1x ( y, a, b, c, d );
+output  y;
+
+input  a, b, c, d;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "muddlib11";
+    specparam CDS_CELLNAME = "nand4_1x";
+    specparam CDS_VIEWNAME = "cmos_sch";
+endspecify
+

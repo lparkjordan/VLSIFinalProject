@@ -1,0 +1,18 @@
+// Library - muddlib11, Cell - buf_1x, View - cmos_sch
+// LAST TIME SAVED: Feb 16 19:56:16 2012
+// NETLIST TIME: Mar 31 00:27:43 2015
+`timescale 1ns / 100ps 
+
+module buf_1x ( y, a );
+output  y;
+
+input  a;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "muddlib11";
+    specparam CDS_CELLNAME = "buf_1x";
+    specparam CDS_VIEWNAME = "cmos_sch";
+endspecify
+

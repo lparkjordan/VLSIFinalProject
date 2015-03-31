@@ -1,0 +1,50 @@
+TOOL:	ncxlmode	08.20-s024: Started on Mar 31, 2015 at 00:31:24 PDT
+/cad/cds/IUS-09/tools/bin/ncxlmode
+	+delay_mode_path
+	+typdelays
+	-l
+	simout.tmp
+	-sv
+	/hdd/home/gkhadge/IC_CAD/cadence/proj2/core_run2/testfixture.template
+	-f /hdd/home/gkhadge/IC_CAD/cadence/proj2/core_run2/verilog.inpfiles
+		ihnl/cds0/netlist
+		ihnl/cds1/netlist
+		ihnl/cds2/netlist
+		ihnl/cds3/netlist
+		ihnl/cds4/netlist
+		ihnl/cds5/netlist
+		ihnl/cds6/netlist
+		ihnl/cds7/netlist
+		ihnl/cds8/netlist
+		ihnl/cds9/netlist
+		ihnl/cds10/netlist
+		ihnl/cds11/netlist
+		ihnl/cds12/netlist
+		ihnl/cds13/netlist
+		ihnl/cds14/netlist
+		ihnl/cds15/netlist
+		ihnl/cds16/netlist
+		ihnl/cds17/netlist
+		ihnl/cds18/netlist
+		hdlFilesDir/cds_globals.v
+	+nostdout
+	+nocopyright
+	+ncvlogargs+" -neverwarn -nostdout -nocopyright "
+	+ncelabargs+" -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/100ps -nostdout -nocopyright"
+	+ncsimargs+" -neverwarn  -nocopyright -gui -input /hdd/home/gkhadge/IC_CAD/cadence/proj2/core_run2/.simTmpNCCmd "
+	+mpssession+virtuoso69376
+	+mpshost+tera.eng.hmc.edu
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> source /cad/cds/IUS-09/tools/inca/files/ncsimrc
+ncsim> database -open shmWave -shm -default -into shm.db
+Created default SHM database shmWave
+ncsim> probe -create -shm test  -all   -depth 1
+Created probe 1
+ncsim> probe -create cds_globals -shm
+Created probe 2
+ncsim> ^C
+ncsim> exit
+TOOL:	ncxlmode	08.20-s024: Exiting on Mar 31, 2015 at 00:31:50 PDT  (total: 00:00:26)

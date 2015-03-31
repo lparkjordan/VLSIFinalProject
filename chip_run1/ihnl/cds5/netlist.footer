@@ -1,0 +1,46 @@
+pad_gnd I48 ( );
+pad_gnd I20 ( );
+pad_gnd I32 ( );
+pad_gnd I34 ( );
+pad_gnd I37 ( );
+pad_gnd I42 ( );
+pad_out I19 ( segMultiplex1, segMultiplex1_core);
+pad_out I23 ( sevenSegment[0], sevenSegment_core[0]);
+pad_out I24 ( sevenSegment[1], sevenSegment_core[1]);
+pad_out I25 ( sevenSegment[4], sevenSegment_core[4]);
+pad_out I26 ( sevenSegment[5], sevenSegment_core[5]);
+pad_out I27 ( sevenSegment[2], sevenSegment_core[2]);
+pad_out I28 ( sevenSegment[3], sevenSegment_core[3]);
+pad_out I29 ( sevenSegment[6], sevenSegment_core[6]);
+pad_out I41 ( segMultiplex2, segMultiplex2_core);
+pad_in I0 ( switch2_core[0], net69, switch2[0]);
+pad_in I1 ( switch2_core[1], net66, switch2[1]);
+pad_in I2 ( switch2_core[2], net63, switch2[2]);
+pad_in I3 ( switch1_core[2], net60, switch1[2]);
+pad_in I4 ( switch2_core[3], net57, switch2[3]);
+pad_in I5 ( switch1_core[0], net54, switch1[0]);
+pad_in I6 ( switch1_core[1], net51, switch1[1]);
+pad_in I44 ( ph2_core, net051, ph2);
+pad_in I10 ( keypadRows_core[3], net45, keypadRows[3]);
+pad_in I13 ( keypadRows_core[2], net42, keypadRows[2]);
+pad_in I38 ( reset_core, net39, reset);
+pad_in I45 ( ph1_core, net057, ph1);
+pad_in I43 ( switch1_core[3], net058, switch1[3]);
+pad_in I46 ( keypadRows_core[1], net059, keypadRows[1]);
+pad_in I47 ( keypadRows_core[0], net061, keypadRows[0]);
+pad_in I49 ( keypadNSwitchInput_core, net043, keypadInputNSwitchInput);
+pad_vdd I21 ( );
+pad_vdd I31 ( );
+pad_vdd I33 ( );
+pad_vdd I35 ( );
+pad_vdd I40 ( );
+pad_bidirhe I50 ( net062, net067, keypadCols[0], keypadCols_core[0],
+     keypadCols_core[0]);
+pad_bidirhe I53 ( net056, net055, keypadCols[3], keypadCols_core[3],
+     keypadCols_core[3]);
+pad_bidirhe I52 ( net066, net068, keypadCols[2], keypadCols_core[2],
+     keypadCols_core[2]);
+pad_bidirhe I51 ( net060, net063, keypadCols[1], keypadCols_core[1],
+     keypadCols_core[1]);
+
+endmodule

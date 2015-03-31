@@ -1,0 +1,47 @@
+// Library - e155ASIC, Cell - core, View - schematic
+// LAST TIME SAVED: Mar 30 16:37:12 2015
+// NETLIST TIME: Mar 31 00:27:43 2015
+`timescale 1ns / 100ps 
+
+module core ( enable1, enable2, keypadCols, seg, keypadNswitchinput,
+     keypadRows, ph1, ph2, reset, switch1, switch2 );
+
+output  enable1, enable2;
+
+input  keypadNswitchinput, ph1, ph2, reset;
+
+output [3:0]  keypadCols;
+output [6:0]  seg;
+
+input [3:0]  keypadRows;
+input [3:0]  switch1;
+input [3:0]  switch2;
+
+
+// Buses in the design
+
+wire  [0:3]  net18;
+
+wire  [0:3]  net21;
+
+wire  [0:3]  net20;
+
+wire  [0:3]  net17;
+
+
+specify 
+    specparam CDS_LIBNAME  = "e155ASIC";
+    specparam CDS_CELLNAME = "core";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+twoDigitDisplay I0 ( enable1, enable2, seg[6:0], net18[0:3],
+     net17[0:3], net19);
+mux2_c_1x Digit1mux2[3:0] ( net18[0:3], switch1[3:0], net21[0:3],
+     keypadNswitchinput);
+mux2_c_1x Digit2mux2[3:0] ( net17[0:3], switch2[3:0], net20[0:3],
+     keypadNswitchinput);
+keyScanner I3 ( ph1, ph2, reset, keypadRows[3:0], keypadCols[3:0],
+     net21[0:3], net20[0:3], net19);
+
+endmodule

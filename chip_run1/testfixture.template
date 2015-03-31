@@ -1,0 +1,32 @@
+
+`timescale 1ns / 100ps
+
+module test;
+
+
+wire  segMultiplex1, segMultiplex2;
+
+reg  keypadInputNSwitchInput, ph1, ph2, reset;
+
+wire [3:0]  keypadCols;
+wire [6:0]  sevenSegment;
+
+reg [3:0]  switch1;
+reg [3:0]  switch2;
+reg [3:0]  keypadRows;
+
+
+
+chip top(keypadCols, segMultiplex1, segMultiplex2, sevenSegment, 
+     keypadInputNSwitchInput, keypadRows, ph1, ph2, reset, switch1, 
+     switch2); 
+ 
+
+`ifdef verilog
+
+ //please enter any additional verilog stimulus in the /hdd/home/gkhadge/IC_CAD/cadence/proj2/chip_run1/testfixture.verilog file
+`include 
+     "/hdd/home/gkhadge/IC_CAD/cadence/proj2/chip_run1/testfixture.verilog"
+`endif
+
+endmodule 

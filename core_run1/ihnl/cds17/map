@@ -1,0 +1,100 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  repList "behavioral functional schematic cmos_sch"
+  stopList "behavioral functional"
+  hierDelim "."
+  hierPrefix "test.top"
+  globalHierPrefix "cds_globals."
+  busRef   "ORDERED"
+  netType   "BUS"
+  leftStr  "["
+  rangeStr  ":"
+  rightStr  "]"
+ )
+( defbus
+( "lastdigitreg_f_mid" 3 0  "lastdigitreg_f_mid" 3 0  )
+( "currentdigitreg_f_mid" 3 0  "currentdigitreg_f_mid" 3 0  )
+( "rows" 3 0  "rows" 3 0  )
+( "statereg_f_mid" 1 0  "statereg_f_mid" 1 0  )
+( "lastrowreg_f_mid" 3 0  "lastrowreg_f_mid" 3 0  )
+( "enablereg_f_mid" 1 0  "enablereg_f_mid" 1 0  )
+( "lastdigitreg_d2" 3 0  "lastdigitreg_d2" 3 0  )
+( "currentdigitreg_d2" 3 0  "currentdigitreg_d2" 3 0  )
+( "statereg_d2" 1 0  "statereg_d2" 1 0  )
+( "lastrowreg_d2" 3 0  "lastrowreg_d2" 3 0  )
+( "enablereg_d2" 1 0  "enablereg_d2" 1 0  )
+( "lastrow" 3 0  "lastrow" 3 0  )
+( "enabletimer" 1 0  "enabletimer" 1 0  )
+( "state" 1 0  "state" 1 0  )
+( "currentDigit" 3 0  "currentDigit" 3 0  )
+( "lastDigit" 3 0  "lastDigit" 3 0  )
+( "cols" 3 0  "cols" 3 0  )
+ )
+( net
+( "currentdigitreg_f_mid<3>" "currentdigitreg_f_mid[3]" )
+( "enabletimer<0>" "enabletimer[0]" )
+( "currentdigitreg_f_mid<2>" "currentdigitreg_f_mid[2]" )
+( "currentDigit<3>" "currentDigit[3]" )
+( "lastdigitreg_d2<1>" "lastdigitreg_d2[1]" )
+( "lastdigitreg_f_mid<0>" "lastdigitreg_f_mid[0]" )
+( "rows<3>" "rows[3]" )
+( "cols<2>" "cols[2]" )
+( "currentDigit<1>" "currentDigit[1]" )
+( "cols<3>" "cols[3]" )
+( "currentdigitreg_d2<3>" "currentdigitreg_d2[3]" )
+( "currentdigitreg_f_mid<1>" "currentdigitreg_f_mid[1]" )
+( "lastdigitreg_d2<0>" "lastdigitreg_d2[0]" )
+( "lastDigit<1>" "lastDigit[1]" )
+( "enablereg_f_mid<1>" "enablereg_f_mid[1]" )
+( "statereg_d2<1>" "statereg_d2[1]" )
+( "lastdigitreg_d2<2>" "lastdigitreg_d2[2]" )
+( "state<0>" "state[0]" )
+( "enablereg_d2<1>" "enablereg_d2[1]" )
+( "currentdigitreg_d2<0>" "currentdigitreg_d2[0]" )
+( "state<1>" "state[1]" )
+( "lastrowreg_f_mid<2>" "lastrowreg_f_mid[2]" )
+( "lastrowreg_d2<0>" "lastrowreg_d2[0]" )
+( "currentdigitreg_d2<2>" "currentdigitreg_d2[2]" )
+( "rows<1>" "rows[1]" )
+( "lastrowreg_d2<1>" "lastrowreg_d2[1]" )
+( "currentdigitreg_f_mid<0>" "currentdigitreg_f_mid[0]" )
+( "statereg_d2<0>" "statereg_d2[0]" )
+( "currentdigitreg_d2<1>" "currentdigitreg_d2[1]" )
+( "lastrow<0>" "lastrow[0]" )
+( "lastrow<1>" "lastrow[1]" )
+( "statereg_f_mid<1>" "statereg_f_mid[1]" )
+( "currentDigit<0>" "currentDigit[0]" )
+( "lastdigitreg_f_mid<3>" "lastdigitreg_f_mid[3]" )
+( "lastrowreg_d2<3>" "lastrowreg_d2[3]" )
+( "enablereg_f_mid<0>" "enablereg_f_mid[0]" )
+( "lastDigit<2>" "lastDigit[2]" )
+( "lastrowreg_d2<2>" "lastrowreg_d2[2]" )
+( "lastDigit<0>" "lastDigit[0]" )
+( "lastDigit<3>" "lastDigit[3]" )
+( "lastdigitreg_f_mid<1>" "lastdigitreg_f_mid[1]" )
+( "cols<1>" "cols[1]" )
+( "lastrowreg_f_mid<1>" "lastrowreg_f_mid[1]" )
+( "lastdigitreg_d2<3>" "lastdigitreg_d2[3]" )
+( "enabletimer<1>" "enabletimer[1]" )
+( "rows<0>" "rows[0]" )
+( "lastrow<3>" "lastrow[3]" )
+( "lastdigitreg_f_mid<2>" "lastdigitreg_f_mid[2]" )
+( "lastrowreg_f_mid<0>" "lastrowreg_f_mid[0]" )
+( "cols<0>" "cols[0]" )
+( "currentDigit<2>" "currentDigit[2]" )
+( "lastrow<2>" "lastrow[2]" )
+( "statereg_f_mid<0>" "statereg_f_mid[0]" )
+( "enablereg_d2<0>" "enablereg_d2[0]" )
+( "rows<2>" "rows[2]" )
+( "lastrowreg_f_mid<3>" "lastrowreg_f_mid[3]" )
+ )
+( inst
+ )
+( model
+ )
+( term
+ )
+( param
+ )
+ )

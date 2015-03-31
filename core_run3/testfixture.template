@@ -1,0 +1,31 @@
+
+`timescale 1ns / 100ps
+
+module test;
+
+
+wire  enable1, enable2;
+
+reg  keypadNswitchinput, ph1, ph2, reset;
+
+wire [6:0]  seg;
+wire [3:0]  keypadCols;
+
+reg [3:0]  keypadRows;
+reg [3:0]  switch2;
+reg [3:0]  switch1;
+
+
+
+core top(enable1, enable2, keypadCols, seg, keypadNswitchinput, 
+     keypadRows, ph1, ph2, reset, switch1, switch2); 
+ 
+
+`ifdef verilog
+
+ //please enter any additional verilog stimulus in the /hdd/home/gkhadge/IC_CAD/cadence/proj2/core_run3/testfixture.verilog file
+`include 
+     "/hdd/home/gkhadge/IC_CAD/cadence/proj2/core_run3/testfixture.verilog"
+`endif
+
+endmodule 

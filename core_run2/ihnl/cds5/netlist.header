@@ -1,0 +1,24 @@
+// Library - e155ASIC, Cell - sevenSegDec, View - schematic
+// LAST TIME SAVED: Mar 31 00:23:13 2015
+// NETLIST TIME: Mar 31 00:27:43 2015
+`timescale 1ns / 100ps 
+
+module sevenSegDec ( seg, digit );
+
+
+output [6:0]  seg;
+
+input [3:0]  digit;
+
+
+// Buses in the design
+
+wire  [3:0]  Ndigit;
+
+
+specify 
+    specparam CDS_LIBNAME  = "e155ASIC";
+    specparam CDS_CELLNAME = "sevenSegDec";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

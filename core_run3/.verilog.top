@@ -1,0 +1,32 @@
+
+`timescale 1ns / 100ps
+
+module test;
+
+
+wire  enable1, enable2;
+
+reg  keypadNswitchinput, ph1, ph2, reset;
+
+wire [6:0]  seg;
+wire [3:0]  keypadCols;
+
+reg [3:0]  keypadRows;
+reg [3:0]  switch2;
+reg [3:0]  switch1;
+
+// Buses in the design
+
+wire  [0:3]  net17;
+
+wire  [0:3]  net18;
+
+wire  [0:3]  net20;
+
+wire  [0:3]  net21;
+
+
+
+core top(enable1, enable2, keypadCols, seg, keypadNswitchinput, 
+     keypadRows, ph1, ph2, reset, switch1, switch2); 
+ 

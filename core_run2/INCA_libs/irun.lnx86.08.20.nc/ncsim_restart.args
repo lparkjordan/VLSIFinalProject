@@ -1,0 +1,41 @@
+//
+// File created by:  ncxlmode
+// Do not modify this file
+//
++delay_mode_path
++typdelays
++nostdout
++nocopyright
+"+ncvlogargs+ -neverwarn -nostdout -nocopyright "
+"+ncelabargs+ -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/100ps -nostdout -nocopyright"
+"+ncsimargs+ -neverwarn  -nocopyright -gui -input /hdd/home/gkhadge/IC_CAD/cadence/proj2/core_run2/.simTmpNCCmd "
++mpssession+virtuoso69376
++mpshost+tera.eng.hmc.edu
+-NOSTDOUT
+-NOCOPYRIGHT
+-neverwarn
+-nocopyright
+-gui
+-input
+/hdd/home/gkhadge/IC_CAD/cadence/proj2/core_run2/.simTmpNCCmd
+-MPSSESSION
+virtuoso69376
+-MPSHOST
+tera.eng.hmc.edu
+-MESSAGES
+-XLSTIME
+1427787084
+-XLKEEP
+-XLMODE
+./INCA_libs/irun.lnx86.08.20.nc
+-RUNMODE
+-CDSLIB
+./INCA_libs/irun.lnx86.08.20.nc/cds.lib
+-HDLVAR
+./INCA_libs/irun.lnx86.08.20.nc/hdl.var
+-XLNAME
+ncxlmode
+-XLVERSION
+"TOOL:	ncxlmode	08.20-s024"
+-XLNAME
+./INCA_libs/irun.lnx86.08.20.nc/tera.eng.hmc.edu_70997

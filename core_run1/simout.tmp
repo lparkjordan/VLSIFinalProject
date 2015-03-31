@@ -1,0 +1,247 @@
+TOOL:	ncxlmode	08.20-s024: Started on Mar 31, 2015 at 00:56:58 PDT
+/cad/cds/IUS-09/tools/bin/ncxlmode
+	+delay_mode_path
+	+typdelays
+	-l
+	simout.tmp
+	-sv
+	/hdd/home/gkhadge/IC_CAD/cadence/proj2/core_run1/testfixture.template
+	-f /hdd/home/gkhadge/IC_CAD/cadence/proj2/core_run1/verilog.inpfiles
+		ihnl/cds0/netlist
+		ihnl/cds1/netlist
+		ihnl/cds2/netlist
+		ihnl/cds3/netlist
+		ihnl/cds4/netlist
+		ihnl/cds5/netlist
+		ihnl/cds6/netlist
+		ihnl/cds7/netlist
+		ihnl/cds8/netlist
+		ihnl/cds9/netlist
+		ihnl/cds10/netlist
+		ihnl/cds11/netlist
+		ihnl/cds12/netlist
+		ihnl/cds13/netlist
+		ihnl/cds14/netlist
+		ihnl/cds15/netlist
+		ihnl/cds16/netlist
+		ihnl/cds17/netlist
+		ihnl/cds18/netlist
+		hdlFilesDir/cds_globals.v
+	+nostdout
+	+nocopyright
+	+ncvlogargs+" -neverwarn -nostdout -nocopyright "
+	+ncelabargs+" -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -access +w  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/100ps -nostdout -nocopyright"
+	+ncsimargs+" -neverwarn  -nocopyright -gui -input /hdd/home/gkhadge/IC_CAD/cadence/proj2/core_run1/.simTmpNCCmd "
+	+mpssession+virtuoso69376
+	+mpshost+tera.eng.hmc.edu
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> source /cad/cds/IUS-09/tools/inca/files/ncsimrc
+ncsim> database -open shmWave -shm -default -into shm.db
+Created default SHM database shmWave
+ncsim> probe -create -shm test  -all   -depth 1
+Created probe 1
+ncsim> probe -create cds_globals -shm
+Created probe 2
+ncsim> probe -create -shm test.top.I0.timer test.top.I0.enable2 test.top.I0.enable1
+Created probe 3
+ncsim> run 2000
+Error on line          1: inputs = 0000
+ outputs = 1102 (1101 expected)
+Error on line          2: inputs = 0000
+ outputs = 1102 (1101 expected)
+Error on line          3: inputs = 0000
+ outputs = 1102 (1101 expected)
+Error on line          4: inputs = 0000
+ outputs = 1102 (1101 expected)
+Error on line          5: inputs = 0100
+ outputs = 09e5 (0902 expected)
+Error on line          6: inputs = 0100
+ outputs = 09e5 (0902 expected)
+Error on line          7: inputs = 0100
+ outputs = 09e5 (0902 expected)
+Error on line          8: inputs = 0100
+ outputs = 09e5 (0902 expected)
+Error on line          9: inputs = 0100
+ outputs = 0502 (05e5 expected)
+Error on line         10: inputs = 0100
+ outputs = 0502 (05e5 expected)
+Error on line         11: inputs = 0100
+ outputs = 0502 (05e5 expected)
+Error on line         12: inputs = 0100
+ outputs = 0502 (05e5 expected)
+Error on line         13: inputs = 0100
+ outputs = 03e5 (0302 expected)
+Error on line         14: inputs = 0100
+ outputs = 03e5 (0302 expected)
+Error on line         15: inputs = 0100
+ outputs = 03e5 (0302 expected)
+Error on line         16: inputs = 0100
+ outputs = 03e5 (0302 expected)
+Error on line         17: inputs = 0100
+ outputs = 1102 (11e5 expected)
+Error on line         18: inputs = 0200
+ outputs = 1102 (1091 expected)
+Error on line         19: inputs = 0300
+ outputs = 1102 (10c1 expected)
+Error on line         20: inputs = 0400
+ outputs = 1102 (1065 expected)
+Error on line         21: inputs = 0510
+ outputs = 0849 (09e6 expected)
+Error on line         22: inputs = 0520
+ outputs = 0849 (0892 expected)
+Error on line         23: inputs = 0530
+ outputs = 0849 (08c2 expected)
+Error on line         24: inputs = 0540
+ outputs = 0849 (0866 expected)
+Error on line         25: inputs = 0550
+ outputs = 044a (0449 expected)
+Error on line         26: inputs = 0650
+ outputs = 044a (0409 expected)
+Error on line         27: inputs = 0750
+ outputs = 044a (05e1 expected)
+Error on line         28: inputs = 0850
+ outputs = 044a (0401 expected)
+Error on line         29: inputs = 0850
+ outputs = 0201 (024a expected)
+Error on line         30: inputs = 0860
+ outputs = 0201 (020a expected)
+Error on line         31: inputs = 0870
+ outputs = 0201 (03e2 expected)
+Error on line         32: inputs = 0880
+ outputs = 0201 (0202 expected)
+Error on line         33: inputs = 0980
+ outputs = 1002 (1061 expected)
+Error on line         34: inputs = 0a80
+ outputs = 1002 (1021 expected)
+Error on line         35: inputs = 0b80
+ outputs = 1002 (100d expected)
+Error on line         36: inputs = 0c80
+ outputs = 1002 (109d expected)
+Error on line         37: inputs = 0c90
+ outputs = 089d (0862 expected)
+Error on line         38: inputs = 0ca0
+ outputs = 089d (0822 expected)
+Error on line         39: inputs = 0cb0
+ outputs = 089d (080e expected)
+Error on line         40: inputs = 0cc0
+ outputs = 089d (089e expected)
+Error on line         41: inputs = 0dc0
+ outputs = 049e (0485 expected)
+Error on line         42: inputs = 0ec0
+ outputs = 049e (0419 expected)
+Error on line         43: inputs = 0fc0
+ outputs = 049e (0439 expected)
+Error on line         44: inputs = 0fc0
+ outputs = 049e (0439 expected)
+Error on line         45: inputs = 0fd0
+ outputs = 0239 (0286 expected)
+Error on line         46: inputs = 0fe0
+ outputs = 0239 (021a expected)
+Error on line         47: inputs = 0ff0
+ outputs = 0239 (023a expected)
+Error on line         48: inputs = 0ff0
+ outputs = 0239 (023a expected)
+Error on line         49: inputs = 1fd0
+ outputs = 1102 (1101 expected)
+Error on line         50: inputs = 1fe0
+ outputs = 1102 (1101 expected)
+Error on line         51: inputs = 1ff0
+ outputs = 1102 (1101 expected)
+Error on line         52: inputs = 1ff0
+ outputs = 1102 (1101 expected)
+Error on line         53: inputs = 1fd0
+ outputs = 0901 (0902 expected)
+Error on line         54: inputs = 1fe0
+ outputs = 0901 (0902 expected)
+Error on line         55: inputs = 1ff0
+ outputs = 0901 (0902 expected)
+Error on line         56: inputs = 1ff0
+ outputs = 0901 (0902 expected)
+Error on line         57: inputs = 1fd0
+ outputs = 0502 (0501 expected)
+Error on line         58: inputs = 1fe0
+ outputs = 0502 (0501 expected)
+Error on line         59: inputs = 1ff0
+ outputs = 0502 (0501 expected)
+Error on line         60: inputs = 1ff0
+ outputs = 0502 (0501 expected)
+Error on line         61: inputs = 1fd0
+ outputs = 0301 (0302 expected)
+Error on line         62: inputs = 1fe1
+ outputs = 0301 (0302 expected)
+Error on line         63: inputs = 1ff1
+ outputs = 0301 (0302 expected)
+Error on line         64: inputs = 1ff1
+ outputs = 0301 (0302 expected)
+Error on line         65: inputs = 1fd1
+ outputs = 0302 (0285 expected)
+Error on line         66: inputs = 1fe1
+ outputs = 0302 (0285 expected)
+Error on line         67: inputs = 1ff1
+ outputs = 0302 (0285 expected)
+Error on line         68: inputs = 1ff1
+ outputs = 0302 (0285 expected)
+Error on line         69: inputs = 1fd1
+ outputs = 0285 (0302 expected)
+Error on line         70: inputs = 1fe1
+ outputs = 0285 (0302 expected)
+Error on line         71: inputs = 1ff1
+ outputs = 0285 (0302 expected)
+Error on line         72: inputs = 1ff1
+ outputs = 0285 (0302 expected)
+Error on line         73: inputs = 1fd1
+ outputs = 0302 (0285 expected)
+Error on line         74: inputs = 1fe1
+ outputs = 0302 (0285 expected)
+Error on line         75: inputs = 1ff1
+ outputs = 0302 (0285 expected)
+Error on line         76: inputs = 1ff1
+ outputs = 0302 (0285 expected)
+Error on line         77: inputs = 1fd1
+ outputs = 0285 (0302 expected)
+Error on line         78: inputs = 1fe1
+ outputs = 0285 (0302 expected)
+Error on line         79: inputs = 1ff0
+ outputs = 0285 (0302 expected)
+Error on line         80: inputs = 1ff0
+ outputs = 0285 (0302 expected)
+Error on line         81: inputs = 1fd0
+ outputs = 1102 (1085 expected)
+Error on line         82: inputs = 1fe8
+ outputs = 1102 (1085 expected)
+Error on line         83: inputs = 1ff8
+ outputs = 1102 (1085 expected)
+Error on line         84: inputs = 1ff8
+ outputs = 1102 (1085 expected)
+Error on line         85: inputs = 1fd8
+ outputs = 11e5 (1086 expected)
+Error on line         86: inputs = 1fe8
+ outputs = 11e5 (1086 expected)
+Error on line         87: inputs = 1ff8
+ outputs = 11e5 (1086 expected)
+Error on line         88: inputs = 1ff8
+ outputs = 11e5 (1086 expected)
+Error on line         89: inputs = 1fd8
+ outputs = 1086 (11e5 expected)
+Error on line         90: inputs = 1fe8
+ outputs = 1086 (11e5 expected)
+Error on line         91: inputs = 1ff8
+ outputs = 1086 (11e5 expected)
+Error on line         92: inputs = 1ff8
+ outputs = 1086 (11e5 expected)
+Error on line         93: inputs = 1fd8
+ outputs = 11e5 (1086 expected)
+Error on line         94: inputs = 1fe8
+ outputs = 11e5 (1086 expected)
+Error on line         95: inputs = 1ff8
+ outputs = 11e5 (1086 expected)
+Error on line         96: inputs = 1ff8
+ outputs = 11e5 (1086 expected)
+        96 tests completed with         96 errors
+Simulation stopped via $stop(1) at time 1960 NS + 0
+ncsim> ^C
+ncsim> exit
+TOOL:	ncxlmode	08.20-s024: Exiting on Mar 31, 2015 at 00:58:53 PDT  (total: 00:01:55)

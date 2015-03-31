@@ -1,0 +1,37 @@
+// Library - e155ASIC, Cell - core, View - schematic
+// LAST TIME SAVED: Mar 31 01:00:24 2015
+// NETLIST TIME: Mar 31 01:00:55 2015
+`timescale 1ns / 100ps 
+
+module core ( enable1, enable2, keypadCols, seg, keypadNswitchinput,
+     keypadRows, ph1, ph2, reset, switch1, switch2 );
+
+output  enable1, enable2;
+
+input  keypadNswitchinput, ph1, ph2, reset;
+
+output [6:0]  seg;
+output [3:0]  keypadCols;
+
+input [3:0]  keypadRows;
+input [3:0]  switch2;
+input [3:0]  switch1;
+
+
+// Buses in the design
+
+wire  [0:3]  net17;
+
+wire  [0:3]  net18;
+
+wire  [0:3]  net20;
+
+wire  [0:3]  net21;
+
+
+specify 
+    specparam CDS_LIBNAME  = "e155ASIC";
+    specparam CDS_CELLNAME = "core";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

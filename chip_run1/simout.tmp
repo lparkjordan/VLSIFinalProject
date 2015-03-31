@@ -1,0 +1,101 @@
+TOOL:	ncxlmode	08.20-s024: Started on Mar 31, 2015 at 01:26:36 PDT
+/cad/cds/IUS-09/tools/bin/ncxlmode
+	+delay_mode_path
+	+typdelays
+	-l
+	simout.tmp
+	-sv
+	/hdd/home/gkhadge/IC_CAD/cadence/proj2/chip_run1/testfixture.template
+	-f /hdd/home/gkhadge/IC_CAD/cadence/proj2/chip_run1/verilog.inpfiles
+		/hdd/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/NCSU_Analog_Parts/nmos4/functional/verilog.v
+		/hdd/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/NCSU_Analog_Parts/pmos4/functional/verilog.v
+		ihnl/cds0/netlist
+		ihnl/cds1/netlist
+		ihnl/cds2/netlist
+		ihnl/cds3/netlist
+		ihnl/cds4/netlist
+		ihnl/cds5/netlist
+		ihnl/cds6/netlist
+		ihnl/cds7/netlist
+		ihnl/cds8/netlist
+		ihnl/cds9/netlist
+		ihnl/cds10/netlist
+		ihnl/cds11/netlist
+		ihnl/cds12/netlist
+		ihnl/cds13/netlist
+		ihnl/cds14/netlist
+		ihnl/cds15/netlist
+		ihnl/cds16/netlist
+		ihnl/cds17/netlist
+		ihnl/cds18/netlist
+		ihnl/cds19/netlist
+		ihnl/cds20/netlist
+		ihnl/cds21/netlist
+		ihnl/cds22/netlist
+		ihnl/cds23/netlist
+		ihnl/cds24/netlist
+		ihnl/cds25/netlist
+		hdlFilesDir/cds_globals.v
+	+nostdout
+	+nocopyright
+	+ncvlogargs+" -neverwarn -nostdout -nocopyright "
+	+ncelabargs+" -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/1ns -nostdout -nocopyright"
+	+ncsimargs+" -neverwarn  -nocopyright -nostdout -batch -exit "
+Recompiling... reason: file './testfixture.template' is newer than expected.
+	expected: Tue Mar 31 01:19:41 2015
+	actual:   Tue Mar 31 01:24:20 2015
+file: /hdd/home/gkhadge/IC_CAD/cadence/proj2/chip_run1/testfixture.template
+file: /hdd/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/NCSU_Analog_Parts/nmos4/functional/verilog.v
+file: /hdd/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/NCSU_Analog_Parts/pmos4/functional/verilog.v
+file: ihnl/cds0/netlist
+file: ihnl/cds1/netlist
+file: ihnl/cds2/netlist
+file: ihnl/cds3/netlist
+file: ihnl/cds4/netlist
+file: ihnl/cds5/netlist
+file: ihnl/cds6/netlist
+file: ihnl/cds7/netlist
+file: ihnl/cds8/netlist
+file: ihnl/cds9/netlist
+file: ihnl/cds10/netlist
+file: ihnl/cds11/netlist
+file: ihnl/cds12/netlist
+file: ihnl/cds13/netlist
+file: ihnl/cds14/netlist
+file: ihnl/cds15/netlist
+file: ihnl/cds16/netlist
+file: ihnl/cds17/netlist
+file: ihnl/cds18/netlist
+file: ihnl/cds19/netlist
+file: ihnl/cds20/netlist
+file: ihnl/cds21/netlist
+file: ihnl/cds22/netlist
+file: ihnl/cds23/netlist
+file: ihnl/cds24/netlist
+file: ihnl/cds25/netlist
+file: hdlFilesDir/cds_globals.v
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                 702      30
+		Primitives:             1848       6
+		Registers:                47      14
+		Scalar wires:            621       -
+		Expanded wires:           12       3
+		Always blocks:             3       3
+		Initial blocks:           35       2
+		Pseudo assignments:        7       7
+		Simulation timescale:  100ps
+	Writing initial simulation snapshot: worklib.test:template
+Loading snapshot worklib.test:template .................... Done
+ncsim> source /cad/cds/IUS-09/tools/inca/files/ncsimrc
+ncsim> run
+        96 tests completed with          0 errors
+Simulation stopped via $stop(1) at time 1960 NS + 0
+./testfixture.verilog:48 			$stop;
+ncsim> exit
+TOOL:	ncxlmode	08.20-s024: Exiting on Mar 31, 2015 at 01:26:37 PDT  (total: 00:00:01)

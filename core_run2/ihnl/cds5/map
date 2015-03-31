@@ -1,0 +1,45 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  repList "behavioral functional schematic cmos_sch"
+  stopList "behavioral functional"
+  hierDelim "."
+  hierPrefix "test.top"
+  globalHierPrefix "cds_globals."
+  busRef   "ORDERED"
+  netType   "BUS"
+  leftStr  "["
+  rangeStr  ":"
+  rightStr  "]"
+ )
+( defbus
+( "digit" 3 0  "digit" 3 0  )
+( "seg" 6 0  "seg" 6 0  )
+( "Ndigit" 3 0  "Ndigit" 3 0  )
+ )
+( net
+( "digit<2>" "digit[2]" )
+( "seg<0>" "seg[0]" )
+( "seg<5>" "seg[5]" )
+( "seg<3>" "seg[3]" )
+( "digit<1>" "digit[1]" )
+( "Ndigit<3>" "Ndigit[3]" )
+( "Ndigit<0>" "Ndigit[0]" )
+( "Ndigit<2>" "Ndigit[2]" )
+( "seg<1>" "seg[1]" )
+( "seg<2>" "seg[2]" )
+( "digit<0>" "digit[0]" )
+( "Ndigit<1>" "Ndigit[1]" )
+( "seg<4>" "seg[4]" )
+( "seg<6>" "seg[6]" )
+( "digit<3>" "digit[3]" )
+ )
+( inst
+ )
+( model
+ )
+( term
+ )
+( param
+ )
+ )

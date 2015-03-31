@@ -1,0 +1,81 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "core"
+  repList "behavioral functional schematic cmos_sch"
+  stopList "behavioral functional"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  hierPrefix "test.top"
+  globalHierPrefix "cds_globals."
+  netlistDir "/hdd/home/gkhadge/IC_CAD/cadence/proj2/core_run3"
+  busRef   "ORDERED"
+  netType   "BUS"
+  leftStr  "["
+  rangeStr  ":"
+  rightStr  "]"
+ )
+( instViewTable
+ )
+( defbus
+( "net21" 0 3  "net21" 0 3  )
+( "net20" 0 3  "net20" 0 3  )
+( "keypadCols" 3 0  "keypadCols" 3 0  )
+( "switch1" 3 0  "switch1" 3 0  )
+( "switch2" 3 0  "switch2" 3 0  )
+( "net18" 0 3  "net18" 0 3  )
+( "net17" 0 3  "net17" 0 3  )
+( "seg" 6 0  "seg" 6 0  )
+( "keypadRows" 3 0  "keypadRows" 3 0  )
+ )
+( net
+( "gnd!" "cds_globals.gnd_" )
+( "vdd!" "cds_globals.vdd_" )
+ )
+( inst
+ )
+( model
+( "muddlib11/inv_4x/cmos_sch" "inv_4x" )
+( "muddlib11/nor3_1x/cmos_sch" "nor3_1x" )
+( "muddlib11/nand3_1x/cmos_sch" "nand3_1x" )
+( "muddlib11/nand2_2x/cmos_sch" "nand2_2x" )
+( "muddlib11/mux2_c_1x/cmos_sch" "mux2_c_1x" )
+( "muddlib11/nand4_1x/cmos_sch" "nand4_1x" )
+( "muddlib11/buf_1x/cmos_sch" "buf_1x" )
+( "muddlib11/latch_c_1x/cmos_sch" "latch_c_1x" )
+( "muddlib11/a2o1_1x/cmos_sch" "a2o1_1x" )
+( "e155ASIC/core/schematic" "core" )
+( "e155ASIC/keyScanner/schematic" "keyScanner" )
+( "muddlib11/and2_1x/cmos_sch" "and2_1x" )
+( "muddlib11/nor2_1x/cmos_sch" "nor2_1x" )
+( "e155ASIC/twoDigitDisplay/schematic" "twoDigitDisplay" )
+( "e155ASIC/sevenSegDec/schematic" "sevenSegDec" )
+( "muddlib11/nand2_1x/cmos_sch" "nand2_1x" )
+( "muddlib11/nor2_2x/cmos_sch" "nor2_2x" )
+( "muddlib11/inv_1x/cmos_sch" "inv_1x" )
+( "muddlib11/or2_1x/cmos_sch" "or2_1x" )
+ )
+( term
+ )
+( param
+ )
+( "buf_1x" "ihnl/cds6/map" )
+( "twoDigitDisplay" "ihnl/cds7/map" )
+( "latch_c_1x" "ihnl/cds8/map" )
+( "core" "ihnl/cds18/map" )
+( "keyScanner" "ihnl/cds17/map" )
+( "inv_1x" "ihnl/cds1/map" )
+( "nand2_2x" "ihnl/cds13/map" )
+( "nand3_1x" "ihnl/cds3/map" )
+( "inv_4x" "ihnl/cds11/map" )
+( "mux2_c_1x" "ihnl/cds0/map" )
+( "or2_1x" "ihnl/cds16/map" )
+( "nor2_1x" "ihnl/cds9/map" )
+( "sevenSegDec" "ihnl/cds5/map" )
+( "and2_1x" "ihnl/cds14/map" )
+( "nand4_1x" "ihnl/cds2/map" )
+( "nand2_1x" "ihnl/cds4/map" )
+( "a2o1_1x" "ihnl/cds15/map" )
+( "nor2_2x" "ihnl/cds10/map" )
+( "nor3_1x" "ihnl/cds12/map" )
+ )

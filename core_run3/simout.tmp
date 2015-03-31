@@ -1,0 +1,155 @@
+TOOL:	ncxlmode	08.20-s024: Started on Mar 31, 2015 at 01:03:28 PDT
+/cad/cds/IUS-09/tools/bin/ncxlmode
+	+delay_mode_path
+	+typdelays
+	-l
+	simout.tmp
+	-sv
+	/hdd/home/gkhadge/IC_CAD/cadence/proj2/core_run3/testfixture.template
+	-f /hdd/home/gkhadge/IC_CAD/cadence/proj2/core_run3/verilog.inpfiles
+		ihnl/cds0/netlist
+		ihnl/cds1/netlist
+		ihnl/cds2/netlist
+		ihnl/cds3/netlist
+		ihnl/cds4/netlist
+		ihnl/cds5/netlist
+		ihnl/cds6/netlist
+		ihnl/cds7/netlist
+		ihnl/cds8/netlist
+		ihnl/cds9/netlist
+		ihnl/cds10/netlist
+		ihnl/cds11/netlist
+		ihnl/cds12/netlist
+		ihnl/cds13/netlist
+		ihnl/cds14/netlist
+		ihnl/cds15/netlist
+		ihnl/cds16/netlist
+		ihnl/cds17/netlist
+		ihnl/cds18/netlist
+		hdlFilesDir/cds_globals.v
+	+nostdout
+	+nocopyright
+	+ncvlogargs+" -neverwarn -nostdout -nocopyright "
+	+ncelabargs+" -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/1ns -nostdout -nocopyright"
+	+ncsimargs+" -neverwarn  -nocopyright -nostdout -batch -exit "
+file: /hdd/home/gkhadge/IC_CAD/cadence/proj2/core_run3/testfixture.template
+	module worklib.test:template
+		errors: 0, warnings: 1
+file: ihnl/cds0/netlist
+	module worklib.mux2_c_1x:verilog
+		errors: 0, warnings: 12
+file: ihnl/cds1/netlist
+	module worklib.inv_1x:verilog
+		errors: 0, warnings: 2
+file: ihnl/cds2/netlist
+	module worklib.nand4_1x:verilog
+		errors: 0, warnings: 8
+file: ihnl/cds3/netlist
+	module worklib.nand3_1x:verilog
+		errors: 0, warnings: 6
+file: ihnl/cds4/netlist
+	module worklib.nand2_1x:verilog
+		errors: 0, warnings: 4
+file: ihnl/cds5/netlist
+	module worklib.sevenSegDec:verilog
+		errors: 0, warnings: 0
+file: ihnl/cds6/netlist
+	module worklib.buf_1x:verilog
+		errors: 0, warnings: 4
+file: ihnl/cds7/netlist
+	module worklib.twoDigitDisplay:verilog
+		errors: 0, warnings: 0
+file: ihnl/cds8/netlist
+	module worklib.latch_c_1x:verilog
+		errors: 0, warnings: 14
+file: ihnl/cds9/netlist
+	module worklib.nor2_1x:verilog
+		errors: 0, warnings: 4
+file: ihnl/cds10/netlist
+	module worklib.nor2_2x:verilog
+		errors: 0, warnings: 4
+file: ihnl/cds11/netlist
+	module worklib.inv_4x:verilog
+		errors: 0, warnings: 2
+file: ihnl/cds12/netlist
+	module worklib.nor3_1x:verilog
+		errors: 0, warnings: 6
+file: ihnl/cds13/netlist
+	module worklib.nand2_2x:verilog
+		errors: 0, warnings: 4
+file: ihnl/cds14/netlist
+	module worklib.and2_1x:verilog
+		errors: 0, warnings: 6
+file: ihnl/cds15/netlist
+	module worklib.a2o1_1x:verilog
+		errors: 0, warnings: 8
+file: ihnl/cds16/netlist
+	module worklib.or2_1x:verilog
+		errors: 0, warnings: 6
+file: ihnl/cds17/netlist
+	module worklib.keyScanner:verilog
+		errors: 0, warnings: 0
+file: ihnl/cds18/netlist
+	module worklib.core:verilog
+		errors: 0, warnings: 0
+file: hdlFilesDir/cds_globals.v
+	module worklib.cds_globals:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.a2o1_1x:verilog <0x2f4e8ea4>
+			streams:   0, words:     0
+		worklib.and2_1x:verilog <0x791de146>
+			streams:   0, words:     0
+		worklib.buf_1x:verilog <0x1a285088>
+			streams:   0, words:     0
+		worklib.inv_1x:verilog <0x1d2881d2>
+			streams:   0, words:     0
+		worklib.inv_4x:verilog <0x222b2aa4>
+			streams:   0, words:     0
+		worklib.latch_c_1x:verilog <0x2202f013>
+			streams:   1, words:   416
+		worklib.mux2_c_1x:verilog <0x1ed962df>
+			streams:   0, words:     0
+		worklib.nand2_1x:verilog <0x7dd22aad>
+			streams:   0, words:     0
+		worklib.nand2_2x:verilog <0x6451543c>
+			streams:   0, words:     0
+		worklib.nand3_1x:verilog <0x2f80ce32>
+			streams:   0, words:     0
+		worklib.nand4_1x:verilog <0x285700e7>
+			streams:   0, words:     0
+		worklib.nor2_1x:verilog <0x2d1033c5>
+			streams:   0, words:     0
+		worklib.nor2_2x:verilog <0x138f5d54>
+			streams:   0, words:     0
+		worklib.nor3_1x:verilog <0x62195ae9>
+			streams:   0, words:     0
+		worklib.or2_1x:verilog <0x480b09be>
+			streams:   0, words:     0
+		worklib.test:template <0x68ab147f>
+			streams:  11, words:  6003
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                 174      21
+		Primitives:             1362       4
+		Registers:                47      14
+		Scalar wires:            442       -
+		Expanded wires:           12       3
+		Always blocks:             3       3
+		Initial blocks:           35       2
+		Pseudo assignments:        6       6
+		Simulation timescale:  100ps
+	Writing initial simulation snapshot: worklib.test:template
+Loading snapshot worklib.test:template .................... Done
+ncsim> source /cad/cds/IUS-09/tools/inca/files/ncsimrc
+ncsim> run
+        96 tests completed with          0 errors
+Simulation stopped via $stop(1) at time 1960 NS + 0
+./testfixture.verilog:48 		$stop;
+ncsim> exit
+TOOL:	ncxlmode	08.20-s024: Exiting on Mar 31, 2015 at 01:03:29 PDT  (total: 00:00:01)
