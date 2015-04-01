@@ -1,4 +1,4 @@
-# File Created by  at Mon Mar 30 16:19:26 2015
+# File Created by  at Tue Mar 31 16:56:23 2015
 # assisted by CdsLibEditor
 INCLUDE /proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib
 #DEFINE muddlib10 /courses/e158/15/lib/muddlib10
@@ -6,5 +6,4 @@ INCLUDE /proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib
 #DEFINE mips8 /courses/e158/15/lib/mips8
 DEFINE HMC_Sheets_8ths /courses/e158/15/lib/oa/HMC_Sheets_8ths
 DEFINE muddlib11 muddlib11
-DEFINE e155ASIC /hdd/home/gkhadge/IC_CAD/cadence/proj2/e155ASIC
-DEFINE mips8 mips8
+DEFINE e155ASIC e155ASIC
