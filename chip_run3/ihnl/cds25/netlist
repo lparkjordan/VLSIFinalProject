@@ -1,0 +1,49 @@
+// Library - e155ASIC, Cell - chip, View - schematic
+// LAST TIME SAVED: Mar 31 20:35:16 2015
+// NETLIST TIME: Apr  6 22:40:24 2015
+`timescale 1ns / 100ps 
+
+module chip ( keypadCols, segMultiplex1, segMultiplex2, sevenSegment,
+     keypadInputNSwitchInput, keypadRows, ph1, ph2, reset, switch1,
+     switch2 );
+
+output  segMultiplex1, segMultiplex2;
+
+input  keypadInputNSwitchInput, ph1, ph2, reset;
+
+output [3:0]  keypadCols;
+output [6:0]  sevenSegment;
+
+input [3:0]  switch1;
+input [3:0]  keypadRows;
+input [3:0]  switch2;
+
+
+// Buses in the design
+
+wire  [0:3]  net36;
+
+wire  [0:3]  net37;
+
+wire  [0:3]  net38;
+
+wire  [0:3]  net35;
+
+wire  [0:6]  net34;
+
+
+specify 
+    specparam CDS_LIBNAME  = "e155ASIC";
+    specparam CDS_CELLNAME = "chip";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+padframe I1 ( keypadCols[3:0], net30, net36[0:3], net32, net31, net33,
+     segMultiplex1, segMultiplex2, sevenSegment[6:0], net38[0:3],
+     net37[0:3], net35[0:3], keypadInputNSwitchInput, keypadRows[3:0],
+     ph1, ph2, reset, net25, net24, net34[0:6], switch1[3:0],
+     switch2[3:0]);
+core I2 ( net25, net24, net35[0:3], net34[0:6], net30, net36[0:3],
+     net32, net31, net33, net38[0:3], net37[0:3]);
+
+endmodule

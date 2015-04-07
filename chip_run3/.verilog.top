@@ -1,0 +1,35 @@
+
+`timescale 1ns / 100ps
+
+module test;
+
+
+wire  segMultiplex1, segMultiplex2;
+
+reg  keypadInputNSwitchInput, ph1, ph2, reset;
+
+wire [3:0]  keypadCols;
+wire [6:0]  sevenSegment;
+
+reg [3:0]  switch1;
+reg [3:0]  keypadRows;
+reg [3:0]  switch2;
+
+// Buses in the design
+
+wire  [0:3]  net36;
+
+wire  [0:3]  net37;
+
+wire  [0:3]  net38;
+
+wire  [0:3]  net35;
+
+wire  [0:6]  net34;
+
+
+
+chip top(keypadCols, segMultiplex1, segMultiplex2, sevenSegment, 
+     keypadInputNSwitchInput, keypadRows, ph1, ph2, reset, switch1, 
+     switch2); 
+ 

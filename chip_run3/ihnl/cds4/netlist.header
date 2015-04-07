@@ -1,0 +1,20 @@
+// Library - e155ASIC, Cell - pad_outen, View - schematic
+// LAST TIME SAVED: Mar 31 22:09:44 2015
+// NETLIST TIME: Apr  6 22:40:24 2015
+`timescale 1ns / 100ps 
+
+module pad_outen ( DataIn, DataInB, pad, DataOut, EN );
+output  DataIn, DataInB;
+
+inout  pad;
+
+input  DataOut, EN;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "e155ASIC";
+    specparam CDS_CELLNAME = "pad_outen";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

@@ -1,0 +1,96 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "chip"
+  repList "behavioral functional schematic cmos_sch"
+  stopList "behavioral functional"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  hierPrefix "test.top"
+  globalHierPrefix "cds_globals."
+  netlistDir "/hdd/home/gkhadge/IC_CAD/cadence/VLSIFinalProject/chip_run3"
+  busRef   "ORDERED"
+  netType   "BUS"
+  leftStr  "["
+  rangeStr  ":"
+  rightStr  "]"
+ )
+( instViewTable
+ )
+( defbus
+( "switch2" 3 0  "switch2" 3 0  )
+( "sevenSegment" 6 0  "sevenSegment" 6 0  )
+( "net34" 0 6  "net34" 0 6  )
+( "keypadRows" 3 0  "keypadRows" 3 0  )
+( "net35" 0 3  "net35" 0 3  )
+( "net38" 0 3  "net38" 0 3  )
+( "net37" 0 3  "net37" 0 3  )
+( "switch1" 3 0  "switch1" 3 0  )
+( "net36" 0 3  "net36" 0 3  )
+( "keypadCols" 3 0  "keypadCols" 3 0  )
+ )
+( net
+( "gnd!" "cds_globals.gnd_" )
+( "vdd!" "cds_globals.vdd_" )
+ )
+( inst
+ )
+( model
+( "muddlib11/inv_4x/cmos_sch" "inv_4x" )
+( "muddlib11/nor3_1x/cmos_sch" "nor3_1x" )
+( "muddlib11/nand3_1x/cmos_sch" "nand3_1x" )
+( "muddlib11/nand2_2x/cmos_sch" "nand2_2x" )
+( "UofU_Pads/pad_vdd/schematic" "pad_vdd" )
+( "muddlib11/mux2_c_1x/cmos_sch" "mux2_c_1x" )
+( "muddlib11/nand4_1x/cmos_sch" "nand4_1x" )
+( "UofU_Pads/pad_in/schematic" "pad_in" )
+( "e155ASIC/chip/schematic" "chip" )
+( "e155ASIC/padframe/schematic" "padframe" )
+( "muddlib11/buf_1x/cmos_sch" "buf_1x" )
+( "muddlib11/latch_c_1x/cmos_sch" "latch_c_1x" )
+( "muddlib11/a2o1_1x/cmos_sch" "a2o1_1x" )
+( "e155ASIC/pad_outen/schematic" "pad_outen" )
+( "e155ASIC/core/schematic" "core" )
+( "UofU_Pads/pad_out/schematic" "pad_out" )
+( "e155ASIC/keyScanner/schematic" "keyScanner" )
+( "muddlib11/and2_1x/cmos_sch" "and2_1x" )
+( "muddlib11/nor2_1x/cmos_sch" "nor2_1x" )
+( "e155ASIC/twoDigitDisplay/schematic" "twoDigitDisplay" )
+( "UofU_Pads/pad_gnd/schematic" "pad_gnd" )
+( "e155ASIC/sevenSegDec/schematic" "sevenSegDec" )
+( "muddlib11/nand2_1x/cmos_sch" "nand2_1x" )
+( "muddlib11/nor2_2x/cmos_sch" "nor2_2x" )
+( "muddlib11/inv_1x/cmos_sch" "inv_1x" )
+( "muddlib11/or2_1x/cmos_sch" "or2_1x" )
+ )
+( term
+ )
+( param
+ )
+( "pad_vdd" "ihnl/cds3/map" )
+( "buf_1x" "ihnl/cds12/map" )
+( "twoDigitDisplay" "ihnl/cds13/map" )
+( "pad_out" "ihnl/cds1/map" )
+( "padframe" "ihnl/cds5/map" )
+( "pad_outen" "ihnl/cds4/map" )
+( "latch_c_1x" "ihnl/cds14/map" )
+( "pad_gnd" "ihnl/cds0/map" )
+( "core" "ihnl/cds24/map" )
+( "keyScanner" "ihnl/cds23/map" )
+( "inv_1x" "ihnl/cds7/map" )
+( "nand2_2x" "ihnl/cds19/map" )
+( "nand3_1x" "ihnl/cds9/map" )
+( "inv_4x" "ihnl/cds17/map" )
+( "mux2_c_1x" "ihnl/cds6/map" )
+( "or2_1x" "ihnl/cds22/map" )
+( "nor2_1x" "ihnl/cds15/map" )
+( "sevenSegDec" "ihnl/cds11/map" )
+( "and2_1x" "ihnl/cds20/map" )
+( "pad_in" "ihnl/cds2/map" )
+( "nand4_1x" "ihnl/cds8/map" )
+( "chip" "ihnl/cds25/map" )
+( "nand2_1x" "ihnl/cds10/map" )
+( "a2o1_1x" "ihnl/cds21/map" )
+( "nor2_2x" "ihnl/cds16/map" )
+( "nor3_1x" "ihnl/cds18/map" )
+ )

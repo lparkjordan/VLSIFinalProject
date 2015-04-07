@@ -1,0 +1,7 @@
+mux2_c_1x mux2_c_1x[3:0] ( net8[0:3], digit2[3:0], digit1[3:0],
+     enable2);
+inv_1x I1 ( enable2, timer);
+sevenSegDec I2 ( seg[6:0], net8[0:3]);
+buf_1x I3 ( enable1, timer);
+
+endmodule
