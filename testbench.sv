@@ -1,6 +1,7 @@
 module testbench();
 	logic ph1, ph2, reset;
 	logic mode; //inputs
+	logic pulldownEn;
 	logic [3:0] switch1, switch2, rows; 
 	logic [3:0] expectedColumns; // expected outputs
 	logic [6:0] expectedSeg;
@@ -12,7 +13,7 @@ module testbench();
 	logic [31:0] vectornum, errors;
 	
 	//instantiate device under test
-	e155ASIC dut(ph1, ph2, reset, mode, switch1, switch2, rows, columns, seg, multi1, multi2);
+	e155ASIC dut(ph1, ph2, reset, mode, pulldownEn, switch1, switch2, rows, columns, seg, multi1, multi2);
 	
 	//generate clock(s)
 	always
@@ -37,7 +38,7 @@ module testbench();
 			#1; 
 			{mode, switch1, switch2, rows, expectedColumns, expectedSeg, expectedMulti} = testvectors[vectornum];
 		end
-	
+	assign pulldownEn = 1'b1;
 	// check results on falling edge of clock phase 2
 	always @ (negedge ph2)
 	begin
