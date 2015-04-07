@@ -6,7 +6,6 @@
 ./INCA_libs/irun.lnx86.08.20.nc
 -RUNMODE
 -sv
-/hdd/home/gkhadge/IC_CAD/cadence/proj2/chip_run1/testfixture.template
 /hdd/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/NCSU_Analog_Parts/nmos4/functional/verilog.v
 /hdd/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/NCSU_Analog_Parts/pmos4/functional/verilog.v
 ihnl/cds0/netlist

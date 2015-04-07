@@ -17,6 +17,10 @@ PATH
 
 +r
 
+-access
+
++w
+
 -pulse_e
 
 100

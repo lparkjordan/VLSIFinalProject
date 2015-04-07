@@ -297,7 +297,7 @@ simNCVerilogStepElab = 'nil
 simNCVerilogReadAccess = t
 
 ;Write
-simNCVerilogWriteAccess = 'nil
+simNCVerilogWriteAccess = t
 
 ;Connectivity
 simNCVerilogConnectAccess = 'nil

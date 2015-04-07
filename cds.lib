@@ -7,3 +7,4 @@ INCLUDE /proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib
 DEFINE HMC_Sheets_8ths /courses/e158/15/lib/oa/HMC_Sheets_8ths
 DEFINE muddlib11 muddlib11
 DEFINE e155ASIC e155ASIC
+DEFINE avTech /cad/cds/ASSURA615/tools/assura/etc/avtech/avTech

@@ -7,18 +7,24 @@
 +nostdout
 +nocopyright
 "+ncvlogargs+ -neverwarn -nostdout -nocopyright "
-"+ncelabargs+ -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/1ns -nostdout -nocopyright"
-"+ncsimargs+ -neverwarn  -nocopyright -nostdout -batch -exit "
+"+ncelabargs+ -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -access +w  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/1ns -nostdout -nocopyright"
+"+ncsimargs+ -neverwarn  -nocopyright -gui -input /hdd/home/lparkjordan/IC_CAD/cadence/VLSIFinalProject/chip_run1/.simTmpNCCmd "
++mpssession+virtuoso12224
++mpshost+tera.eng.hmc.edu
 -NOSTDOUT
 -NOCOPYRIGHT
 -neverwarn
 -nocopyright
--nostdout
--batch
--exit
+-gui
+-input
+/hdd/home/lparkjordan/IC_CAD/cadence/VLSIFinalProject/chip_run1/.simTmpNCCmd
+-MPSSESSION
+virtuoso12224
+-MPSHOST
+tera.eng.hmc.edu
 -MESSAGES
 -XLSTIME
-1427790396
+1427848268
 -XLKEEP
 -XLMODE
 ./INCA_libs/irun.lnx86.08.20.nc
@@ -32,4 +38,4 @@ ncxlmode
 -XLVERSION
 "TOOL:	ncxlmode	08.20-s024"
 -XLNAME
-./INCA_libs/irun.lnx86.08.20.nc/tera.eng.hmc.edu_80167
+./INCA_libs/irun.lnx86.08.20.nc/tera.eng.hmc.edu_12650
