@@ -1,0 +1,265 @@
+// Library - e155ASIC, Cell - keyScanner, View - schematic
+// LAST TIME SAVED: Mar 30 16:32:57 2015
+// NETLIST TIME: Apr  6 22:17:20 2015
+`timescale 1ns / 100ps 
+
+module keyScanner ( ph1, ph2, reset, rows, cols, currentDigit,
+     lastDigit, slowtimer );
+output  slowtimer;
+
+input  ph1, ph2, reset;
+
+output [3:0]  cols;
+output [3:0]  lastDigit;
+output [3:0]  currentDigit;
+
+input [3:0]  rows;
+wire  [3:0]   lastdigitreg_f_mid;
+wire  [3:0]   currentdigitreg_f_mid;
+wire  [1:0]   statereg_f_mid;
+wire  [3:0]   rows;
+wire  [3:0]   lastrowreg_f_mid;
+wire  [1:0]   enablereg_f_mid;
+wire  [3:0]   lastdigitreg_d2;
+wire  [3:0]   lastrowreg_d2;
+wire  [1:0]   enablereg_d2;
+wire  [3:0]   lastrow;
+wire  [1:0]   enabletimer;
+wire  [1:0]   state;
+wire    n124;
+wire    n123;
+wire    n126;
+wire    n125;
+wire    n121;
+wire    n120;
+wire    n119;
+wire    n118;
+wire    n117;
+wire    n115;
+wire    n114;
+wire    n113;
+wire    n112;
+wire    n111;
+wire    n110;
+wire    n109;
+wire    n108;
+wire    n107;
+wire    n106;
+wire    n122;
+wire    n99;
+wire    n92;
+wire    n104;
+wire    n103;
+wire    n102;
+wire    n101;
+wire    n100;
+wire    n89;
+wire    n98;
+wire    n97;
+wire    n96;
+wire    n95;
+wire    n94;
+wire    n93;
+wire    n86;
+wire    n91;
+wire    n90;
+wire    n87;
+wire    n116;
+wire    n88;
+wire    n81;
+wire    n85;
+wire    n84;
+wire    n83;
+wire    n80;
+wire    n78;
+wire    n76;
+wire    n79;
+wire    n74;
+wire    n77;
+wire    n71;
+wire    n75;
+wire    n72;
+wire    n105;
+wire    n73;
+wire    n69;
+wire    n68;
+wire    n67;
+wire    n64;
+wire    timerreg_f_mid_0_;
+wire    n66;
+wire    n65;
+wire    n82;
+wire  [3:0]   currentDigit;
+wire    ph2;
+wire    reset;
+wire    slowtimer;
+wire  [3:0]   lastDigit;
+wire    n70;
+wire  [3:0]   cols;
+wire    ph1;
+wire  [3:0]   currentdigitreg_d2;
+wire  [1:0]   statereg_d2;
+wire    timerreg_d2_0_;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "e155ASIC";
+    specparam CDS_CELLNAME = "keyScanner";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+latch_c_1x timerreg_f_slave_q_reg_0_ ( slowtimer, timerreg_f_mid_0_,
+     ph1);
+latch_c_1x timerreg_f_master_q_reg_0_ ( timerreg_f_mid_0_,
+     timerreg_d2_0_, ph2);
+latch_c_1x enablereg_f_master_q_reg_1_ ( enablereg_f_mid[1],
+     enablereg_d2[1], ph2);
+latch_c_1x enablereg_f_master_q_reg_0_ ( enablereg_f_mid[0],
+     enablereg_d2[0], ph2);
+latch_c_1x enablereg_f_slave_q_reg_1_ ( enabletimer[1],
+     enablereg_f_mid[1], ph1);
+latch_c_1x enablereg_f_slave_q_reg_0_ ( enabletimer[0],
+     enablereg_f_mid[0], ph1);
+latch_c_1x lastrowreg_f_master_q_reg_3_ ( lastrowreg_f_mid[3],
+     lastrowreg_d2[3], ph2);
+latch_c_1x lastrowreg_f_slave_q_reg_2_ ( lastrow[2],
+     lastrowreg_f_mid[2], ph1);
+latch_c_1x lastrowreg_f_master_q_reg_2_ ( lastrowreg_f_mid[2],
+     lastrowreg_d2[2], ph2);
+latch_c_1x lastrowreg_f_slave_q_reg_1_ ( lastrow[1],
+     lastrowreg_f_mid[1], ph1);
+latch_c_1x lastrowreg_f_master_q_reg_1_ ( lastrowreg_f_mid[1],
+     lastrowreg_d2[1], ph2);
+latch_c_1x lastrowreg_f_master_q_reg_0_ ( lastrowreg_f_mid[0],
+     lastrowreg_d2[0], ph2);
+latch_c_1x lastrowreg_f_slave_q_reg_0_ ( lastrow[0],
+     lastrowreg_f_mid[0], ph1);
+latch_c_1x lastrowreg_f_slave_q_reg_3_ ( lastrow[3],
+     lastrowreg_f_mid[3], ph1);
+latch_c_1x lastdigitreg_f_slave_q_reg_1_ ( lastDigit[1],
+     lastdigitreg_f_mid[1], ph1);
+latch_c_1x lastdigitreg_f_master_q_reg_1_ ( lastdigitreg_f_mid[1],
+     lastdigitreg_d2[1], ph2);
+latch_c_1x lastdigitreg_f_slave_q_reg_3_ ( lastDigit[3],
+     lastdigitreg_f_mid[3], ph1);
+latch_c_1x lastdigitreg_f_master_q_reg_3_ ( lastdigitreg_f_mid[3],
+     lastdigitreg_d2[3], ph2);
+latch_c_1x lastdigitreg_f_slave_q_reg_2_ ( lastDigit[2],
+     lastdigitreg_f_mid[2], ph1);
+latch_c_1x lastdigitreg_f_slave_q_reg_0_ ( lastDigit[0],
+     lastdigitreg_f_mid[0], ph1);
+latch_c_1x lastdigitreg_f_master_q_reg_2_ ( lastdigitreg_f_mid[2],
+     lastdigitreg_d2[2], ph2);
+latch_c_1x lastdigitreg_f_master_q_reg_0_ ( lastdigitreg_f_mid[0],
+     lastdigitreg_d2[0], ph2);
+latch_c_1x currentdigitreg_f_slave_q_reg_1_ ( currentDigit[1],
+     currentdigitreg_f_mid[1], ph1);
+latch_c_1x currentdigitreg_f_master_q_reg_1_ (
+     currentdigitreg_f_mid[1], currentdigitreg_d2[1], ph2);
+latch_c_1x currentdigitreg_f_slave_q_reg_3_ ( currentDigit[3],
+     currentdigitreg_f_mid[3], ph1);
+latch_c_1x currentdigitreg_f_master_q_reg_3_ (
+     currentdigitreg_f_mid[3], currentdigitreg_d2[3], ph2);
+latch_c_1x currentdigitreg_f_slave_q_reg_2_ ( currentDigit[2],
+     currentdigitreg_f_mid[2], ph1);
+latch_c_1x currentdigitreg_f_slave_q_reg_0_ ( currentDigit[0],
+     currentdigitreg_f_mid[0], ph1);
+latch_c_1x currentdigitreg_f_master_q_reg_2_ (
+     currentdigitreg_f_mid[2], currentdigitreg_d2[2], ph2);
+latch_c_1x currentdigitreg_f_master_q_reg_0_ (
+     currentdigitreg_f_mid[0], currentdigitreg_d2[0], ph2);
+latch_c_1x statereg_f_slave_q_reg_1_ ( state[1], statereg_f_mid[1],
+     ph1);
+latch_c_1x statereg_f_slave_q_reg_0_ ( state[0], statereg_f_mid[0],
+     ph1);
+latch_c_1x statereg_f_master_q_reg_1_ ( statereg_f_mid[1],
+     statereg_d2[1], ph2);
+latch_c_1x statereg_f_master_q_reg_0_ ( statereg_f_mid[0],
+     statereg_d2[0], ph2);
+inv_1x U160 ( n101, currentDigit[3]);
+inv_1x U158 ( n99, currentDigit[2]);
+inv_1x U156 ( n97, currentDigit[1]);
+inv_1x U154 ( n95, currentDigit[0]);
+inv_1x U112 ( n105, n104);
+inv_1x U127 ( n78, state[1]);
+nor2_1x U144 ( n81, n107, state[0]);
+nor2_1x U100 ( n80, n111, n78);
+nor2_1x U99 ( n83, n82, n117);
+nor2_1x U91 ( n85, n111, cols[0]);
+nor2_1x U92 ( n86, n121, n109);
+nor2_1x U90 ( n88, n87, n117);
+nor2_1x U153 ( n93, enabletimer[0], enabletimer[1]);
+nor2_1x U96 ( n89, n109, cols[3]);
+nor2_1x U95 ( n92, n91, n117);
+nor2_1x U98 ( n102, n117, n101);
+nor2_1x U93 ( n100, n117, n99);
+nor2_1x U101 ( n98, n117, n97);
+nor2_1x U89 ( n96, n117, n95);
+nor2_1x U94 ( n114, n113, n117);
+nor2_1x U105 ( n112, n111, n117);
+nor2_1x U104 ( n110, n109, n117);
+nor2_1x U103 ( n108, n107, n117);
+nor2_1x U152 ( enablereg_d2[0], reset, enabletimer[0]);
+nor2_1x U97 ( n90, cols[2], n107);
+nor2_1x U131 ( cols[3], state[0], state[1]);
+nor2_1x U130 ( cols[2], state[1], n119);
+nor2_1x U129 ( cols[1], state[0], n78);
+nor2_2x U116 ( enablereg_d2[1], n94, n93);
+nor2_2x U102 ( n103, reset, n75);
+nor2_2x U108 ( n66, rows[3], rows[2]);
+nor2_2x U87 ( n125, reset, n106);
+nor2_2x U109 ( n126, reset, n73);
+nor2_2x U122 ( n74, n118, n104);
+nor2_2x U106 ( n118, rows[0], n107);
+nor2_2x U115 ( n121, cols[3], cols[0]);
+nor2_2x U126 ( cols[0], n119, n78);
+inv_4x U117 ( n94, n125);
+inv_4x U125 ( n106, n73);
+inv_4x U124 ( n115, n116);
+inv_4x U111 ( n113, rows[3]);
+inv_4x U121 ( n109, n84);
+inv_4x U107 ( n65, rows[1]);
+inv_4x U114 ( n119, state[0]);
+mux2_c_1x U145 ( n79, rows[3], n84, cols[3]);
+mux2_c_1x U170 ( timerreg_d2_0_, n126, n125, slowtimer);
+mux2_c_1x U168 ( statereg_d2[0], n122, n120, n119);
+nor3_1x U146 ( n82, n81, n80, n79);
+nor3_1x U133 ( n64, n84, state[0], rows[3]);
+nor3_1x U148 ( n87, n90, n86, n85);
+nor3_1x U150 ( n91, n90, cols[0], n89);
+nor3_1x U132 ( n84, rows[3], rows[2], n65);
+nand2_2x U120 ( currentdigitreg_d2[0], n77, n76);
+nand2_2x U118 ( statereg_d2[1], n124, n123);
+nand2_2x U119 ( n124, n121, n120);
+nand2_2x U123 ( n107, n66, n65);
+nand2_2x U113 ( n73, enabletimer[0], enabletimer[1]);
+nand2_2x U128 ( n117, n126, n74);
+nand2_2x U110 ( n111, rows[2], n113);
+nand2_1x U138 ( n67, rows[0], lastrow[0]);
+nand2_1x U137 ( n68, rows[1], lastrow[1]);
+nand2_1x U136 ( n69, rows[3], lastrow[3]);
+nand2_1x U143 ( n76, currentDigit[0], n103);
+nand2_1x U169 ( n123, state[1], n122);
+nand2_1x U88 ( n122, n117, n116);
+and2_1x U142 ( n75, n106, n74);
+and2_1x U167 ( n120, n126, n118);
+a2o1_1x U140 ( n104, rows[2], lastrow[2], n70);
+a2o1_1x U147 ( currentdigitreg_d2[1], n103, currentDigit[1], n83);
+a2o1_1x U134 ( n72, state[0], n111, n64);
+a2o1_1x U141 ( n77, n72, n71, n117);
+a2o1_1x U149 ( currentdigitreg_d2[2], n103, currentDigit[2], n88);
+a2o1_1x U151 ( currentdigitreg_d2[3], n103, currentDigit[3], n92);
+a2o1_1x U161 ( lastdigitreg_d2[3], lastDigit[3], n103, n102);
+a2o1_1x U159 ( lastdigitreg_d2[2], lastDigit[2], n103, n100);
+a2o1_1x U157 ( lastdigitreg_d2[1], lastDigit[1], n103, n98);
+a2o1_1x U155 ( lastdigitreg_d2[0], lastDigit[0], n103, n96);
+a2o1_1x U162 ( n116, n106, n105, reset);
+a2o1_1x U166 ( lastrowreg_d2[3], lastrow[3], n115, n114);
+a2o1_1x U165 ( lastrowreg_d2[2], n115, lastrow[2], n112);
+a2o1_1x U164 ( lastrowreg_d2[1], n115, lastrow[1], n110);
+a2o1_1x U163 ( lastrowreg_d2[0], lastrow[0], n115, n108);
+or2_1x U135 ( n71, n78, n107);
+nand3_1x U139 ( n70, n69, n68, n67);
+
+endmodule

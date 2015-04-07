@@ -1,0 +1,59 @@
+// Library - e155ASIC, Cell - sevenSegDec, View - schematic
+// LAST TIME SAVED: Mar 31 00:23:13 2015
+// NETLIST TIME: Apr  6 22:17:20 2015
+`timescale 1ns / 100ps 
+
+module sevenSegDec ( seg, digit );
+
+
+output [6:0]  seg;
+
+input [3:0]  digit;
+
+
+// Buses in the design
+
+wire  [3:0]  Ndigit;
+
+
+specify 
+    specparam CDS_LIBNAME  = "e155ASIC";
+    specparam CDS_CELLNAME = "sevenSegDec";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+nand4_1x I37 ( net015, Ndigit[3], digit[2], digit[1], digit[0]);
+nand4_1x I32 ( seg[5], net028, net017, net010, net016);
+nand4_1x I25 ( seg[4], net029, net019, net011, net018);
+nand4_1x I22 ( net030, Ndigit[3], digit[2], Ndigit[1], Ndigit[0]);
+nand4_1x I21 ( net021, digit[3], Ndigit[2], digit[1], Ndigit[0]);
+nand4_1x I20 ( seg[3], net030, net021, net012, net020);
+nand4_1x I17 ( net023, Ndigit[3], Ndigit[2], digit[1], Ndigit[0]);
+nand4_1x I11 ( net031, Ndigit[3], digit[2], Ndigit[1], digit[0]);
+nand4_1x I9 ( seg[1], net031, net025, net013, net024);
+nand4_1x I2 ( net12, digit[3], Ndigit[2], digit[1], digit[0]);
+nand4_1x I1 ( net14, Ndigit[3], Ndigit[2], Ndigit[1], digit[0]);
+nand4_1x I0 ( seg[0], net14, net12, net11, net13);
+nand3_1x I36 ( net09, Ndigit[3], Ndigit[2], Ndigit[1]);
+nand3_1x I34 ( net028, Ndigit[3], Ndigit[2], digit[0]);
+nand3_1x I33 ( net017, Ndigit[3], Ndigit[2], digit[1]);
+nand3_1x I31 ( net010, Ndigit[3], digit[1], digit[0]);
+nand3_1x I30 ( net016, digit[3], digit[2], Ndigit[1]);
+nand3_1x I29 ( net029, Ndigit[3], Ndigit[2], digit[0]);
+nand3_1x I26 ( net019, Ndigit[2], Ndigit[1], digit[0]);
+nand3_1x I24 ( net011, Ndigit[3], digit[2], Ndigit[1]);
+nand3_1x I23 ( net018, Ndigit[3], digit[2], digit[0]);
+nand3_1x I19 ( net012, Ndigit[2], Ndigit[1], digit[0]);
+nand3_1x I18 ( net020, digit[2], digit[1], digit[0]);
+nand3_1x I16 ( net033, digit[3], digit[2], Ndigit[0]);
+nand3_1x I15 ( net022, digit[3], digit[2], digit[1]);
+nand3_1x I13 ( seg[2], net023, net033, net022);
+nand3_1x I12 ( net025, digit[2], digit[1], Ndigit[0]);
+nand3_1x I8 ( net013, digit[3], digit[1], digit[0]);
+nand3_1x I7 ( net024, digit[3], digit[2], Ndigit[0]);
+nand3_1x I4 ( net13, digit[3], digit[2], Ndigit[1]);
+nand3_1x I3 ( net11, digit[2], Ndigit[1], Ndigit[0]);
+inv_1x inv_1x[3:0] ( Ndigit[3:0], digit[3:0]);
+nand2_1x I35 ( seg[6], net015, net09);
+
+endmodule

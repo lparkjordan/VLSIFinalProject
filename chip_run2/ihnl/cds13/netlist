@@ -1,0 +1,35 @@
+// Library - e155ASIC, Cell - twoDigitDisplay, View - schematic
+// LAST TIME SAVED: Mar 31 00:59:57 2015
+// NETLIST TIME: Apr  6 22:17:20 2015
+`timescale 1ns / 100ps 
+
+module twoDigitDisplay ( enable1, enable2, seg, digit1, digit2, timer
+     );
+output  enable1, enable2;
+
+input  timer;
+
+output [6:0]  seg;
+
+input [3:0]  digit1;
+input [3:0]  digit2;
+
+
+// Buses in the design
+
+wire  [0:3]  net8;
+
+
+specify 
+    specparam CDS_LIBNAME  = "e155ASIC";
+    specparam CDS_CELLNAME = "twoDigitDisplay";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+mux2_c_1x mux2_c_1x[3:0] ( net8[0:3], digit2[3:0], digit1[3:0],
+     enable2);
+inv_1x I1 ( enable2, timer);
+sevenSegDec I2 ( seg[6:0], net8[0:3]);
+buf_1x I3 ( enable1, timer);
+
+endmodule

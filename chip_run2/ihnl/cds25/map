@@ -1,0 +1,83 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  repList "behavioral functional schematic cmos_sch"
+  stopList "behavioral functional"
+  hierDelim "."
+  hierPrefix "test.top"
+  globalHierPrefix "cds_globals."
+  busRef   "ORDERED"
+  netType   "BUS"
+  leftStr  "["
+  rangeStr  ":"
+  rightStr  "]"
+ )
+( defbus
+( "net36" 0 3  "net36" 0 3  )
+( "keypadRows" 3 0  "keypadRows" 3 0  )
+( "net34" 0 6  "net34" 0 6  )
+( "sevenSegment" 6 0  "sevenSegment" 6 0  )
+( "switch1" 3 0  "switch1" 3 0  )
+( "net37" 0 3  "net37" 0 3  )
+( "switch2" 3 0  "switch2" 3 0  )
+( "keypadCols" 3 0  "keypadCols" 3 0  )
+( "net38" 0 3  "net38" 0 3  )
+( "net35" 0 3  "net35" 0 3  )
+ )
+( net
+( "keypadRows<0>" "keypadRows[0]" )
+( "net36<0>" "net36[0]" )
+( "switch2<3>" "switch2[3]" )
+( "keypadRows<2>" "keypadRows[2]" )
+( "switch2<0>" "switch2[0]" )
+( "net34<3>" "net34[3]" )
+( "switch1<2>" "switch1[2]" )
+( "sevenSegment<3>" "sevenSegment[3]" )
+( "switch1<0>" "switch1[0]" )
+( "net36<1>" "net36[1]" )
+( "net38<3>" "net38[3]" )
+( "net37<0>" "net37[0]" )
+( "net36<3>" "net36[3]" )
+( "net37<1>" "net37[1]" )
+( "net34<6>" "net34[6]" )
+( "sevenSegment<4>" "sevenSegment[4]" )
+( "keypadCols<0>" "keypadCols[0]" )
+( "net35<2>" "net35[2]" )
+( "net34<2>" "net34[2]" )
+( "net38<0>" "net38[0]" )
+( "sevenSegment<1>" "sevenSegment[1]" )
+( "net35<0>" "net35[0]" )
+( "net37<3>" "net37[3]" )
+( "switch1<1>" "switch1[1]" )
+( "keypadRows<1>" "keypadRows[1]" )
+( "net34<5>" "net34[5]" )
+( "net35<1>" "net35[1]" )
+( "net34<0>" "net34[0]" )
+( "sevenSegment<0>" "sevenSegment[0]" )
+( "net34<1>" "net34[1]" )
+( "switch1<3>" "switch1[3]" )
+( "net35<3>" "net35[3]" )
+( "net38<2>" "net38[2]" )
+( "keypadCols<1>" "keypadCols[1]" )
+( "net34<4>" "net34[4]" )
+( "keypadCols<2>" "keypadCols[2]" )
+( "sevenSegment<5>" "sevenSegment[5]" )
+( "net36<2>" "net36[2]" )
+( "keypadRows<3>" "keypadRows[3]" )
+( "switch2<1>" "switch2[1]" )
+( "net37<2>" "net37[2]" )
+( "sevenSegment<6>" "sevenSegment[6]" )
+( "switch2<2>" "switch2[2]" )
+( "sevenSegment<2>" "sevenSegment[2]" )
+( "net38<1>" "net38[1]" )
+( "keypadCols<3>" "keypadCols[3]" )
+ )
+( inst
+ )
+( model
+ )
+( term
+ )
+( param
+ )
+ )
