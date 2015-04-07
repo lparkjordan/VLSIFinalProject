@@ -1,4 +1,4 @@
-# File Created by  at Tue Mar 31 16:56:23 2015
+# File Created by  at Tue Apr  7 00:51:38 2015
 # assisted by CdsLibEditor
 INCLUDE /proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib
 #DEFINE muddlib10 /courses/e158/15/lib/muddlib10
@@ -9,4 +9,4 @@ DEFINE muddlib11 muddlib11
 DEFINE e155ASIC e155ASIC
 DEFINE avTech /cad/cds/ASSURA615/tools/assura/etc/avtech/avTech
 #Removed by ddDeleteObj: DEFINE import_test /hdd/home/lparkjordan/IC_CAD/cadence/VLSIFinalProject/import_test
-DEFINE e155ASIC_fixed /hdd/home/lparkjordan/IC_CAD/cadence/VLSIFinalProject/e155ASIC_fixed
+DEFINE e155ASIC_fixed e155ASIC_fixed
