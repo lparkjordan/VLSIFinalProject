@@ -1,19 +1,17 @@
 module e155ASIC #(parameter TIMEBITS = 3) (input  logic        clk1, clk2, reset,                  // 40 MHz clock 
-               input logic keypadInputNswitchInput, pulldownEn,
+                    input logic keypadInputNswitchInput, pulldownEn,
                     input logic [3:0] switch1, switch2,      // the four DIP switches
                     input  logic [3:0]  keypadRows,
                     output logic [3:0]  keypadCols,
-                      output logic [6:0]  sevenSeg,                // the segments of the common-anode 7 segment display
+                    output logic [6:0]  sevenSeg,                // the segments of the common-anode 7 segment display
                     output logic        enable1, enable2  // the enables
                     );    
                     
 logic [3:0]  digit1Keypad, digit2Keypad, digit1, digit2, colEnables;
 logic slowtimer;
-logic [3:0] rowPullSrc;
 
 // put pulldowns on keypad inputs
-nmos rowPullEn[3:0](keypadRows, rowPullSrc, pulldownEn);
-pulldown rowPull[3:0](rowPullSrc);
+rnmos rowPullEn[3:0](keypadRows, 1'b0, pulldownEn);
 
 //choose input of hex digits from either keypad or switches
 assign digit1 = (keypadInputNswitchInput)    ? digit1Keypad : switch1; 
