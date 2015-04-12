@@ -34,3 +34,6 @@ vsim.dbg
 *.mr
 *.pvl
 *.syn
+
+# data.dm
+data.dm
