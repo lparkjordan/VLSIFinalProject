@@ -10,3 +10,4 @@ DEFINE muddlib11 muddlib11
 DEFINE avTech /cad/cds/ASSURA615/tools/assura/etc/avtech/avTech
 #Removed by ddDeleteObj: DEFINE import_test /hdd/home/lparkjordan/IC_CAD/cadence/VLSIFinalProject/import_test
 DEFINE e155ASIC_fixed e155ASIC_fixed
+DEFINE E155ASIC_fixed_gdsin /hdd/home/gkhadge/IC_CAD/cadence/VLSIFinalProject/E155ASIC_fixed_gdsin
