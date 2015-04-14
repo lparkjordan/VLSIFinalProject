@@ -1,0 +1,83 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  repList "behavioral functional schematic cmos_sch"
+  stopList "behavioral functional"
+  hierDelim "."
+  hierPrefix "test.top"
+  globalHierPrefix "cds_globals."
+  busRef   "ORDERED"
+  netType   "BUS"
+  leftStr  "["
+  rangeStr  ":"
+  rightStr  "]"
+ )
+( defbus
+( "switch1" 3 0  "switch1" 3 0  )
+( "switch2" 3 0  "switch2" 3 0  )
+( "keypadCols_core" 3 0  "keypadCols_core" 3 0  )
+( "switch2_core" 3 0  "switch2_core" 3 0  )
+( "sevenSegment_core" 6 0  "sevenSegment_core" 6 0  )
+( "keypadRows_core" 3 0  "keypadRows_core" 3 0  )
+( "keypadRows" 3 0  "keypadRows" 3 0  )
+( "switch1_core" 3 0  "switch1_core" 3 0  )
+( "keypadCols" 3 0  "keypadCols" 3 0  )
+( "sevenSegment" 6 0  "sevenSegment" 6 0  )
+ )
+( net
+( "keypadRows<0>" "keypadRows[0]" )
+( "keypadRows_core<2>" "keypadRows_core[2]" )
+( "switch2<3>" "switch2[3]" )
+( "keypadRows<2>" "keypadRows[2]" )
+( "switch2<0>" "switch2[0]" )
+( "sevenSegment_core<0>" "sevenSegment_core[0]" )
+( "keypadRows_core<1>" "keypadRows_core[1]" )
+( "switch1<2>" "switch1[2]" )
+( "sevenSegment<3>" "sevenSegment[3]" )
+( "switch1<0>" "switch1[0]" )
+( "sevenSegment_core<4>" "sevenSegment_core[4]" )
+( "keypadCols_core<3>" "keypadCols_core[3]" )
+( "switch1_core<2>" "switch1_core[2]" )
+( "switch1_core<0>" "switch1_core[0]" )
+( "sevenSegment_core<1>" "sevenSegment_core[1]" )
+( "switch2_core<1>" "switch2_core[1]" )
+( "sevenSegment<4>" "sevenSegment[4]" )
+( "keypadCols<0>" "keypadCols[0]" )
+( "keypadRows_core<3>" "keypadRows_core[3]" )
+( "sevenSegment_core<5>" "sevenSegment_core[5]" )
+( "keypadRows_core<0>" "keypadRows_core[0]" )
+( "switch2_core<0>" "switch2_core[0]" )
+( "switch2_core<2>" "switch2_core[2]" )
+( "sevenSegment<1>" "sevenSegment[1]" )
+( "switch1<1>" "switch1[1]" )
+( "keypadRows<1>" "keypadRows[1]" )
+( "keypadCols_core<0>" "keypadCols_core[0]" )
+( "sevenSegment_core<6>" "sevenSegment_core[6]" )
+( "sevenSegment_core<2>" "sevenSegment_core[2]" )
+( "sevenSegment<0>" "sevenSegment[0]" )
+( "switch1_core<3>" "switch1_core[3]" )
+( "switch1<3>" "switch1[3]" )
+( "switch1_core<1>" "switch1_core[1]" )
+( "sevenSegment_core<3>" "sevenSegment_core[3]" )
+( "keypadCols<1>" "keypadCols[1]" )
+( "sevenSegment<5>" "sevenSegment[5]" )
+( "keypadCols<2>" "keypadCols[2]" )
+( "switch2_core<3>" "switch2_core[3]" )
+( "keypadRows<3>" "keypadRows[3]" )
+( "keypadCols_core<2>" "keypadCols_core[2]" )
+( "switch2<1>" "switch2[1]" )
+( "sevenSegment<6>" "sevenSegment[6]" )
+( "sevenSegment<2>" "sevenSegment[2]" )
+( "keypadCols_core<1>" "keypadCols_core[1]" )
+( "switch2<2>" "switch2[2]" )
+( "keypadCols<3>" "keypadCols[3]" )
+ )
+( inst
+ )
+( model
+ )
+( term
+ )
+( param
+ )
+ )

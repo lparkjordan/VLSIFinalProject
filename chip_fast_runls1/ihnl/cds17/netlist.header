@@ -1,0 +1,36 @@
+// Library - e155ASIC_fixed, Cell - core_fast, View - schematic
+// LAST TIME SAVED: Apr 14 00:04:27 2015
+// NETLIST TIME: Apr 14 00:06:35 2015
+`timescale 1ns / 100ps 
+
+module core_fast ( cols, enable1, enable2, seg, keypadNswitchinput,
+     ph1, ph2, reset, rows, switch1, switch2 );
+output  enable1, enable2;
+
+input  keypadNswitchinput, ph1, ph2, reset;
+
+output [6:0]  seg;
+output [3:0]  cols;
+
+input [3:0]  rows;
+input [3:0]  switch2;
+input [3:0]  switch1;
+
+
+// Buses in the design
+
+wire  [0:3]  net17;
+
+wire  [0:3]  net21;
+
+wire  [0:3]  net18;
+
+wire  [0:3]  net019;
+
+
+specify 
+    specparam CDS_LIBNAME  = "e155ASIC_fixed";
+    specparam CDS_CELLNAME = "core_fast";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

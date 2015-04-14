@@ -1,0 +1,73 @@
+// Verilog HDL and netlist files of
+// "e155ASIC_fixed chip_fast schematic"
+
+// HDL models
+
+// HDL file - NCSU_Analog_Parts, nmos4, functional.
+/hdd/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/NCSU_Analog_Parts/nmos4/functional/verilog.v
+
+// HDL file - NCSU_Analog_Parts, pmos4, functional.
+/hdd/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/NCSU_Analog_Parts/pmos4/functional/verilog.v
+
+
+// End HDL models
+
+// Netlisted models
+
+// netlist file - muddlib11, latch_c_1x, cmos_sch.
+ihnl/cds0/netlist
+// netlist file - muddlib11, inv_1x, cmos_sch.
+ihnl/cds1/netlist
+// netlist file - muddlib11, nor2_1x, cmos_sch.
+ihnl/cds2/netlist
+// netlist file - muddlib11, nor2_2x, cmos_sch.
+ihnl/cds3/netlist
+// netlist file - muddlib11, inv_4x, cmos_sch.
+ihnl/cds4/netlist
+// netlist file - muddlib11, mux2_c_1x, cmos_sch.
+ihnl/cds5/netlist
+// netlist file - muddlib11, nor3_1x, cmos_sch.
+ihnl/cds6/netlist
+// netlist file - muddlib11, nand2_2x, cmos_sch.
+ihnl/cds7/netlist
+// netlist file - muddlib11, nand2_1x, cmos_sch.
+ihnl/cds8/netlist
+// netlist file - muddlib11, and2_1x, cmos_sch.
+ihnl/cds9/netlist
+// netlist file - muddlib11, a2o1_1x, cmos_sch.
+ihnl/cds10/netlist
+// netlist file - muddlib11, or2_1x, cmos_sch.
+ihnl/cds11/netlist
+// netlist file - muddlib11, nand3_1x, cmos_sch.
+ihnl/cds12/netlist
+// netlist file - e155ASIC_fixed, keyScanner_fast, schematic.
+ihnl/cds13/netlist
+// netlist file - muddlib11, nand4_1x, cmos_sch.
+ihnl/cds14/netlist
+// netlist file - e155ASIC_fixed, sevenSegDec, schematic.
+ihnl/cds15/netlist
+// netlist file - e155ASIC_fixed, twoDigitDisplay, schematic.
+ihnl/cds16/netlist
+// netlist file - e155ASIC_fixed, core_fast, schematic.
+ihnl/cds17/netlist
+// netlist file - UofU_Pads, pad_gnd, schematic.
+ihnl/cds18/netlist
+// netlist file - UofU_Pads, pad_out, schematic.
+ihnl/cds19/netlist
+// netlist file - UofU_Pads, pad_in, schematic.
+ihnl/cds20/netlist
+// netlist file - UofU_Pads, pad_vdd, schematic.
+ihnl/cds21/netlist
+// netlist file - e155ASIC_fixed, pad_outen, schematic.
+ihnl/cds22/netlist
+// netlist file - e155ASIC_fixed, padframe, schematic.
+ihnl/cds23/netlist
+// netlist file - e155ASIC_fixed, chip_fast, schematic.
+ihnl/cds24/netlist
+
+
+// End HDL models
+
+// globals file 
+hdlFilesDir/cds_globals.v
+

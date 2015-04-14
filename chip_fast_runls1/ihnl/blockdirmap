@@ -1,0 +1,27 @@
+CADENCE IHNL010725
+
+muddlib11 latch_c_1x cmos_sch cds0
+muddlib11 inv_1x cmos_sch cds1
+muddlib11 nor2_1x cmos_sch cds2
+muddlib11 nor2_2x cmos_sch cds3
+muddlib11 inv_4x cmos_sch cds4
+muddlib11 mux2_c_1x cmos_sch cds5
+muddlib11 nor3_1x cmos_sch cds6
+muddlib11 nand2_2x cmos_sch cds7
+muddlib11 nand2_1x cmos_sch cds8
+muddlib11 and2_1x cmos_sch cds9
+muddlib11 a2o1_1x cmos_sch cds10
+muddlib11 or2_1x cmos_sch cds11
+muddlib11 nand3_1x cmos_sch cds12
+e155ASIC_fixed keyScanner_fast schematic cds13
+muddlib11 nand4_1x cmos_sch cds14
+e155ASIC_fixed sevenSegDec schematic cds15
+e155ASIC_fixed twoDigitDisplay schematic cds16
+e155ASIC_fixed core_fast schematic cds17
+UofU_Pads pad_gnd schematic cds18
+UofU_Pads pad_out schematic cds19
+UofU_Pads pad_in schematic cds20
+UofU_Pads pad_vdd schematic cds21
+e155ASIC_fixed pad_outen schematic cds22
+e155ASIC_fixed padframe schematic cds23
+e155ASIC_fixed chip_fast schematic cds24

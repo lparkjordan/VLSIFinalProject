@@ -1,0 +1,111 @@
+// Library - e155ASIC_fixed, Cell - keyScanner_fast, View - schematic
+// LAST TIME SAVED: Mar 30 16:32:57 2015
+// NETLIST TIME: Apr 14 00:06:35 2015
+`timescale 1ns / 100ps 
+
+module keyScanner_fast ( ph1, ph2, reset, rows, cols, currentDigit,
+     lastDigit, slowtimer );
+output  slowtimer;
+
+input  ph1, ph2, reset;
+
+output [3:0]  cols;
+output [3:0]  lastDigit;
+output [3:0]  currentDigit;
+
+input [3:0]  rows;
+wire  [3:0]   lastdigitreg_f_mid;
+wire  [3:0]   currentdigitreg_f_mid;
+wire  [1:0]   statereg_f_mid;
+wire  [3:0]   rows;
+wire  [3:0]   lastrowreg_f_mid;
+wire  [1:0]   enablereg_f_mid;
+wire  [3:0]   lastdigitreg_d2;
+wire  [3:0]   lastrowreg_d2;
+wire  [1:0]   enablereg_d2;
+wire  [3:0]   lastrow;
+wire  [1:0]   enabletimer;
+wire  [1:0]   state;
+wire    n124;
+wire    n123;
+wire    n126;
+wire    n125;
+wire    n121;
+wire    n120;
+wire    n119;
+wire    n118;
+wire    n117;
+wire    n115;
+wire    n114;
+wire    n113;
+wire    n112;
+wire    n111;
+wire    n110;
+wire    n109;
+wire    n108;
+wire    n107;
+wire    n106;
+wire    n122;
+wire    n99;
+wire    n92;
+wire    n104;
+wire    n103;
+wire    n102;
+wire    n101;
+wire    n100;
+wire    n89;
+wire    n98;
+wire    n97;
+wire    n96;
+wire    n95;
+wire    n94;
+wire    n93;
+wire    n86;
+wire    n91;
+wire    n90;
+wire    n87;
+wire    n116;
+wire    n88;
+wire    n81;
+wire    n85;
+wire    n84;
+wire    n83;
+wire    n80;
+wire    n78;
+wire    n76;
+wire    n79;
+wire    n74;
+wire    n77;
+wire    n71;
+wire    n75;
+wire    n72;
+wire    n105;
+wire    n73;
+wire    n69;
+wire    n68;
+wire    n67;
+wire    n64;
+wire    timerreg_f_mid_0_;
+wire    n66;
+wire    n65;
+wire    n82;
+wire  [3:0]   currentDigit;
+wire    ph2;
+wire    reset;
+wire    slowtimer;
+wire  [3:0]   lastDigit;
+wire    n70;
+wire  [3:0]   cols;
+wire    ph1;
+wire  [3:0]   currentdigitreg_d2;
+wire  [1:0]   statereg_d2;
+wire    timerreg_d2_0_;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "e155ASIC_fixed";
+    specparam CDS_CELLNAME = "keyScanner_fast";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

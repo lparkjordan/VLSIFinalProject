@@ -1,0 +1,37 @@
+// Library - e155ASIC_fixed, Cell - padframe, View - schematic
+// LAST TIME SAVED: Apr 13 22:52:02 2015
+// NETLIST TIME: Apr 14 00:06:35 2015
+`timescale 1ns / 100ps 
+
+module padframe ( keypadCols, keypadNSwitchInput_core, keypadRows_core,
+     ph1_core, ph2_core, reset_core, segMultiplex1, segMultiplex2,
+     sevenSegment, switch1_core, switch2_core, keypadCols_core,
+     keypadInputNSwitchInput, keypadRows, ph1, ph2, reset,
+     segMultiplex1_core, segMultiplex2_core, sevenSegment_core,
+     switch1, switch2 );
+output  keypadNSwitchInput_core, ph1_core, ph2_core, reset_core,
+     segMultiplex1, segMultiplex2;
+
+input  keypadInputNSwitchInput, ph1, ph2, reset, segMultiplex1_core,
+     segMultiplex2_core;
+
+output [6:0]  sevenSegment;
+output [3:0]  keypadCols;
+output [3:0]  switch1_core;
+output [3:0]  keypadRows_core;
+output [3:0]  switch2_core;
+
+input [3:0]  keypadRows;
+input [6:0]  sevenSegment_core;
+input [3:0]  keypadCols_core;
+input [3:0]  switch2;
+input [3:0]  switch1;
+
+
+
+specify 
+    specparam CDS_LIBNAME  = "e155ASIC_fixed";
+    specparam CDS_CELLNAME = "padframe";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

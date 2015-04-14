@@ -1,0 +1,75 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  repList "behavioral functional schematic cmos_sch"
+  stopList "behavioral functional"
+  hierDelim "."
+  hierPrefix "test.top"
+  globalHierPrefix "cds_globals."
+  busRef   "ORDERED"
+  netType   "BUS"
+  leftStr  "["
+  rangeStr  ":"
+  rightStr  "]"
+ )
+( defbus
+( "switch1" 3 0  "switch1" 3 0  )
+( "net019" 0 3  "net019" 0 3  )
+( "switch2" 3 0  "switch2" 3 0  )
+( "cols" 3 0  "cols" 3 0  )
+( "rows" 3 0  "rows" 3 0  )
+( "seg" 6 0  "seg" 6 0  )
+( "net18" 0 3  "net18" 0 3  )
+( "net21" 0 3  "net21" 0 3  )
+( "net17" 0 3  "net17" 0 3  )
+ )
+( net
+( "net019<2>" "net019[2]" )
+( "net17<1>" "net17[1]" )
+( "seg<0>" "seg[0]" )
+( "net019<3>" "net019[3]" )
+( "seg<5>" "seg[5]" )
+( "switch2<3>" "switch2[3]" )
+( "rows<3>" "rows[3]" )
+( "net019<0>" "net019[0]" )
+( "seg<3>" "seg[3]" )
+( "switch2<0>" "switch2[0]" )
+( "cols<2>" "cols[2]" )
+( "net18<3>" "net18[3]" )
+( "cols<3>" "cols[3]" )
+( "net17<3>" "net17[3]" )
+( "net18<1>" "net18[1]" )
+( "switch1<2>" "switch1[2]" )
+( "switch1<0>" "switch1[0]" )
+( "net18<0>" "net18[0]" )
+( "net019<1>" "net019[1]" )
+( "seg<1>" "seg[1]" )
+( "net21<2>" "net21[2]" )
+( "rows<1>" "rows[1]" )
+( "net21<0>" "net21[0]" )
+( "net18<2>" "net18[2]" )
+( "seg<2>" "seg[2]" )
+( "net21<3>" "net21[3]" )
+( "switch1<1>" "switch1[1]" )
+( "switch1<3>" "switch1[3]" )
+( "cols<1>" "cols[1]" )
+( "net17<0>" "net17[0]" )
+( "rows<0>" "rows[0]" )
+( "seg<4>" "seg[4]" )
+( "net17<2>" "net17[2]" )
+( "net21<1>" "net21[1]" )
+( "seg<6>" "seg[6]" )
+( "cols<0>" "cols[0]" )
+( "switch2<1>" "switch2[1]" )
+( "rows<2>" "rows[2]" )
+( "switch2<2>" "switch2[2]" )
+ )
+( inst
+ )
+( model
+ )
+( term
+ )
+( param
+ )
+ )

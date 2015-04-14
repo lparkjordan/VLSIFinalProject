@@ -1,0 +1,34 @@
+CADENCE IHNL01070
+$model
+muddlib11/nor2_1x/cmos_sch nor2_1x
+muddlib11/inv_4x/cmos_sch inv_4x
+muddlib11/nand2_2x/cmos_sch nand2_2x
+UofU_Pads/pad_out/schematic pad_out
+e155ASIC_fixed/sevenSegDec/schematic sevenSegDec
+muddlib11/nand4_1x/cmos_sch nand4_1x
+e155ASIC_fixed/padframe/schematic padframe
+muddlib11/nand2_1x/cmos_sch nand2_1x
+e155ASIC_fixed/chip_fast/schematic chip_fast
+muddlib11/or2_1x/cmos_sch or2_1x
+muddlib11/nor2_2x/cmos_sch nor2_2x
+e155ASIC_fixed/pad_outen/schematic pad_outen
+muddlib11/nand3_1x/cmos_sch nand3_1x
+muddlib11/nor3_1x/cmos_sch nor3_1x
+muddlib11/latch_c_1x/cmos_sch latch_c_1x
+muddlib11/mux2_c_1x/cmos_sch mux2_c_1x
+UofU_Pads/pad_in/schematic pad_in
+e155ASIC_fixed/twoDigitDisplay/schematic twoDigitDisplay
+muddlib11/inv_1x/cmos_sch inv_1x
+muddlib11/and2_1x/cmos_sch and2_1x
+e155ASIC_fixed/keyScanner_fast/schematic keyScanner_fast
+muddlib11/a2o1_1x/cmos_sch a2o1_1x
+UofU_Pads/pad_gnd/schematic pad_gnd
+UofU_Pads/pad_vdd/schematic pad_vdd
+e155ASIC_fixed/core_fast/schematic core_fast
+$endmodel
+$net
+vdd! cds_globals.vdd_
+gnd! cds_globals.gnd_
+$endnet
+$param
+$endparam

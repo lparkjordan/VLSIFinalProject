@@ -1,0 +1,40 @@
+// Library - e155ASIC_fixed, Cell - chip_fast, View - schematic
+// LAST TIME SAVED: Apr 14 00:05:28 2015
+// NETLIST TIME: Apr 14 00:06:35 2015
+`timescale 1ns / 100ps 
+
+module chip_fast ( keypadCols, segMultiplex1, segMultiplex2,
+     sevenSegment, keypadInputNSwitchInput, keypadRows, ph1, ph2,
+     reset, switch1, switch2 );
+
+output  segMultiplex1, segMultiplex2;
+
+input  keypadInputNSwitchInput, ph1, ph2, reset;
+
+output [3:0]  keypadCols;
+output [6:0]  sevenSegment;
+
+input [3:0]  keypadRows;
+input [3:0]  switch2;
+input [3:0]  switch1;
+
+
+// Buses in the design
+
+wire  [0:6]  net34;
+
+wire  [0:3]  net38;
+
+wire  [0:3]  net35;
+
+wire  [0:3]  net36;
+
+wire  [0:3]  net37;
+
+
+specify 
+    specparam CDS_LIBNAME  = "e155ASIC_fixed";
+    specparam CDS_CELLNAME = "chip_fast";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

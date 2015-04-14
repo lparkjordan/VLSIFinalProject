@@ -1,0 +1,9 @@
+core_fast I2 ( net35[0:3], net25, net24, net34[0:6], net30, net32,
+     net31, net33, net36[0:3], net38[0:3], net37[0:3]);
+padframe I1 ( keypadCols[3:0], net30, net36[0:3], net32, net31, net33,
+     segMultiplex1, segMultiplex2, sevenSegment[6:0], net38[0:3],
+     net37[0:3], net35[0:3], keypadInputNSwitchInput, keypadRows[3:0],
+     ph1, ph2, reset, net25, net24, net34[0:6], switch1[3:0],
+     switch2[3:0]);
+
+endmodule
