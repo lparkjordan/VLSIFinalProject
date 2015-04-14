@@ -6,7 +6,7 @@ INCLUDE /proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib
 #DEFINE mips8 /courses/e158/15/lib/mips8
 DEFINE HMC_Sheets_8ths /courses/e158/15/lib/oa/HMC_Sheets_8ths
 DEFINE muddlib11 muddlib11
-DEFINE e155ASIC e155ASIC
+#Removed by ddDeleteObj: DEFINE e155ASIC e155ASIC
 DEFINE avTech /cad/cds/ASSURA615/tools/assura/etc/avtech/avTech
 #Removed by ddDeleteObj: DEFINE import_test /hdd/home/lparkjordan/IC_CAD/cadence/VLSIFinalProject/import_test
 DEFINE e155ASIC_fixed e155ASIC_fixed
